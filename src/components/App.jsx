@@ -1,6 +1,7 @@
 import React from 'react';
 import Kv from './Kv';
-// import About from './About';
+import Focus from './Focus';
+import Comic from './Comic';
 // import Project from './Project';
 
 const Containers = () => {
@@ -8,7 +9,8 @@ const Containers = () => {
     return (
         <div className="App">
             <div className='page'><Kv /></div>
-            {/* <div className='page'></div> */}
+            <div className='page_black'><Focus /></div>
+            <div className='page_black'><Comic /></div>
             {/* <section id="HOME"><Home/></section>
             <section id="ABOUT"><About/></section>
             <section id="PROJECT"><Project /></section> */}

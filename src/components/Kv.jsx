@@ -13,8 +13,6 @@ const Kv = () => {
             </div>
             <div class="kv_img_left"></div>
             <div class="kv_img_right"></div>
-            {/* <div className='kv_img_center' /> */}
-            {/* <div class="kv_img_top"></div> */}
         </div>
     );
 }
