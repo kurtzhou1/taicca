@@ -24,6 +24,7 @@
         width: 55%;
         display: flex;
         justify-content: end;
+        margin-top: 0.3rem;
         .button{
             width: auto;
             color: #09361b;
@@ -46,9 +47,10 @@
 
 .flim{
     background-image: url(../images/black_page/flim.png);
+    position: relative;
     .block1{
         margin-left: 4.5rem;
-        margin-top: 6rem;
+        margin-top: 9rem;
         .title{
             color: #fff67f;
             width: 50%;
@@ -58,7 +60,108 @@
         .content{
             color: white;
             width: 50%;
-            font-size: 14px;
+            font-size: 12px;
+        }
+    }
+    .block2{
+        width: 55%;
+        display: flex;
+        justify-content: end;
+        margin-top: 0.3rem;
+        .button{
+            width: auto;
+            color: #ea5550;
+            background-color: #1d2088;
+            border-radius: 1px;
+            padding: 0.05rem 3rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    }
+    .block3{
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        bottom: 9.2rem;
+        width: 32%;
+        left: 13rem;
+    }
+}
+
+.music{
+    background-image: url(../images/black_page/music.png);
+    position: relative;
+    .block1{
+        margin-left: 4.5rem;
+        margin-top: 9.5rem;
+        // .title{
+        //     color: #fff67f;
+        //     width: 50%;
+        //     font-size: 20px;
+        //     margin-bottom: 0.5rem;
+        // }
+        .content{
+            color: white;
+            width: 50%;
+            font-size: 12px;
+        }
+    }
+    .block2{
+        width: 55%;
+        display: flex;
+        justify-content: end;
+        margin-top: 0.3rem;
+        .button{
+            width: auto;
+            color: #ffc000;
+            background-color: #796baf;
+            border-radius: 1px;
+            padding: 0.05rem 3rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    }
+    .block3{
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        bottom: 6rem;
+        width: 32%;
+        right: 7rem;
+    }
+}
+
+.game{
+    background-image: url(../images/black_page/game.png);
+    position: relative;
+    .block1{
+        margin-left: 4.5rem;
+        margin-top: 8.5rem;
+        // .title{
+        //     color: #fff67f;
+        //     width: 50%;
+        //     font-size: 20px;
+        //     margin-bottom: 0.5rem;
+        // }
+        .content{
+            color: white;
+            width: 50%;
+            font-size: 12px;
+        }
+    }
+    .block2{
+        width: 55%;
+        display: flex;
+        justify-content: end;
+        margin-top: 0.3rem;
+        .button{
+            width: auto;
+            color: #3a499d;
+            background-color: #c3d956;
+            border-radius: 1px;
+            padding: 0.05rem 3rem;
+            font-family: sans-serif;
+            font-weight: bold;
         }
     }
 }
