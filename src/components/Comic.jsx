@@ -18,6 +18,9 @@ const Comic = () => {
                 </div>
             </div>
             <div className="block2">
+                <div className="button">MORE+</div>
+            </div>
+            <div className="block3">
                 根據KOCCA的統計觀察，韓國網路漫畫新作品於2013年至2016年的產量，
                 從原本的382部增加到1,971部，短短三年內突增了1,589部，成長超過五倍。
             </div>

@@ -28,11 +28,13 @@ body {
     background-color: black;
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
     >div{
         height: 100%;
         width: 60%;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+    &.first {
+        padding-top: 3rem;
     }
 }

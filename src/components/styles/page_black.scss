@@ -21,11 +21,44 @@
         }
     }
     .block2{
+        width: 55%;
+        display: flex;
+        justify-content: end;
+        .button{
+            width: auto;
+            color: #09361b;
+            background-color: #fff67f;
+            border-radius: 1px;
+            padding: 0.05rem 3rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    }
+    .block3{
         color: white;
         font-size: 12px;
         position: absolute;
         bottom: 4.5rem;
         width: 40%;
         right: 1rem;
+    }
+}
+
+.flim{
+    background-image: url(../images/black_page/flim.png);
+    .block1{
+        margin-left: 4.5rem;
+        margin-top: 6rem;
+        .title{
+            color: #fff67f;
+            width: 50%;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+        .content{
+            color: white;
+            width: 50%;
+            font-size: 14px;
+        }
     }
 }
