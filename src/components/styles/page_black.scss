@@ -1,5 +1,31 @@
 .focus{
     background-image: url(../images/black_page/focus.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.comic{
+    background-image: url(../images/black_page/comic.png);
+    position: relative;
+    .block1{
+        margin-left: 4.5rem;
+        margin-top: 6rem;
+        .title{
+            color: #fff67f;
+            width: 50%;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+        }
+        .content{
+            color: white;
+            width: 50%;
+            font-size: 14px;
+        }
+    }
+    .block2{
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        bottom: 4.5rem;
+        width: 40%;
+        right: 1rem;
+    }
 }
