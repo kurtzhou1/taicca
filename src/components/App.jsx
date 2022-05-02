@@ -5,6 +5,7 @@ import Comic from './Comic';
 import Flim from './Flim';
 import Music from './Music';
 import Game from './Game';
+import Cross from './Cross';
 
 const Containers = () => {
     
@@ -16,7 +17,7 @@ const Containers = () => {
             <div className='page_black tune1'><Flim /></div>
             <div className='page_black tune2'><Music /></div>
             <div className='page_black tune3'><Game /></div>
-            <div className='page'>123</div>
+            <div className='page section2'><Cross /></div>
             {/* <section id="HOME"><Home/></section>
             <section id="ABOUT"><About/></section>
             <section id="PROJECT"><Project /></section> */}

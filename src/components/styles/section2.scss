@@ -1,0 +1,52 @@
+.cross{
+    background-image: url(../images/section2/cross.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    >div{
+        width: 67%;
+    }
+    .block1{
+        margin-top: 10rem;
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .content{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .subContent{
+            color: #5c148b;
+            font-weight: bold;
+        }
+    }
+    .block2{
+        margin-top: 6rem;
+        >div{
+            // margin-left: 18rem;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 1rem 0 1rem 18rem;
+        }
+    }
+    .block3{
+        width: 55%;
+        display: flex;
+        justify-content: end;
+        margin-top: 0.3rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        .button{
+            width: auto;
+            color: white;
+            background-color: black;
+            border-radius: 1px;
+            padding: 0.05rem 3rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    }
+}
