@@ -10,6 +10,7 @@ import Publish from './Publish';
 import FilmSection2 from './FilmSection2';
 import Performance from './Performance';
 import FilmSection3 from './FilmSection3';
+import CrossSection3 from './CrossSection3';
 
 const Containers = () => {
     
@@ -37,7 +38,12 @@ const Containers = () => {
                     <Performance />
                 </div>
             </div>     
-            <div className='page section2 tune6'><FilmSection3 /></div>    
+            <div className='page section2 tune6'><FilmSection3 /></div> 
+            <div className='page section2 gary tune5'>
+                <div className='mask'>
+                    <CrossSection3 />
+                </div>
+            </div>     
             {/* <section id="HOME"><Home/></section>
             <section id="ABOUT"><About/></section>
             <section id="PROJECT"><Project /></section> */}
