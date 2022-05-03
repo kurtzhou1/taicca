@@ -98,7 +98,7 @@
     }
 }
 
-.filmSection2{
+.film{
     background-image: url(../images/section2/filmSection2.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -137,8 +137,8 @@
     }
 }
 
-.performance{
-    background-image: url(../images/section2/performing.png);
+.filmSection3{
+    background-image: url(../images/section3/filmSection3.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 3rem;
@@ -150,8 +150,14 @@
         justify-content: space-between;
     }
     .block1{
-        margin-top: 2.5rem;
-        width: 62%;
+        width: 85%;
+        display: flex;
+        height: 86%;
+        flex-direction: column;
+        justify-content: end;
+        .contentWrap{
+            margin-left: 49%;
+        }
         .title{
             font-size: 20px;
             font-weight: bold;

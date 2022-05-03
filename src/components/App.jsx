@@ -6,6 +6,10 @@ import Flim from './Flim';
 import Music from './Music';
 import Game from './Game';
 import Cross from './Cross';
+import Publish from './Publish';
+import FilmSection2 from './FilmSection2';
+import Performance from './Performance';
+import FilmSection3 from './FilmSection3';
 
 const Containers = () => {
     
@@ -18,6 +22,22 @@ const Containers = () => {
             <div className='page_black tune2'><Music /></div>
             <div className='page_black tune3'><Game /></div>
             <div className='page section2'><Cross /></div>
+            <div className='page section2 gary tune4'>
+                <div className='mask'>
+                    <Publish />
+                </div>
+            </div>
+            <div className='page section2 tune4'>
+                <div className='mask'>
+                    <FilmSection2 />
+                </div>
+            </div>     
+            <div className='page section2 gary tune5'>
+                <div className='mask'>
+                    <Performance />
+                </div>
+            </div>     
+            <div className='page section2 tune6'><FilmSection3 /></div>    
             {/* <section id="HOME"><Home/></section>
             <section id="ABOUT"><About/></section>
             <section id="PROJECT"><Project /></section> */}
