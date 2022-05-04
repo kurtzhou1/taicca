@@ -5,7 +5,7 @@
 }
 
 .kv{
-    // position: relative;
+    position: relative;
     height: 100%;
     width: 100%;
     .kv_header {
@@ -117,7 +117,7 @@
         height: 120%;
         position: absolute;
         // top: -150px;
-        top: -10.5rem;
+        bottom: 0rem;
         right: 0px;
         background-size: cover;
         @include forM(){
