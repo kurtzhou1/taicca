@@ -15,17 +15,23 @@
         width: 60%;
         background-repeat: no-repeat;
         background-size: contain;
+        @include forM(){
+            width: 80%;
+        }
     }
     &.focusPage {
         padding-top: 3rem;
         @include forM(){
-            height: 94vh;
+            height: 110vh;
         }
     }
-    &.tune1 {
-        height: 72vh;
+    &.flimPage {
+        height: 70vh;
+        @include forM(){
+            height: 100vh;
+        }
     }
-    &.tune2 {
+    &.musicPage {
         height: 66vh;
     }
     &.tune3 {
@@ -37,8 +43,10 @@
     background-image: url(../images/black_page/focus.png);
     @include forM(){
         background-image: url(../images/black_page/focus_M.png);
-        width: 84% !important;
+        width: 95% !important;
         background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
@@ -102,28 +110,78 @@
 }
 
 .flim{
-    background-image: url(../images/black_page/flim.png);
+    // background-image: url(../images/black_page/flim.png);
+    background-color: #ea5550;
     position: relative;
+    padding: 2rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+    @include forM(){
+        font-size: 15px;
+    }
+    .title{
+        img{
+            width: 100%;
+        }
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        @include forM(){
+            flex-direction: column;
+        }
+        .blockWrap{
+            width: 60%;
+            padding-left: 1rem;
+            height: 88%;
+            @include forM(){
+                width: 100%;
+                padding: 0;
+            }
+        }
+        .flim_pie{
+            width: 40%;
+            margin-left: 1rem;
+            @include forM(){
+                width: 100%;
+                margin-top: 1rem;
+                margin-left: 0;
+            }
+            .text{
+                font-size: 12px;
+                color: #1d2088;
+                font-weight: bold;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                margin-top: 5rem;
+                @include forM(){
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
     .block1{
-        margin-left: 4.5rem;
-        margin-top: 9rem;
-        .title{
-            color: #fff67f;
-            width: 50%;
+        // margin-left: 4.5rem;
+        // margin-top: 9rem;
+        .subTitle{
+            color: #1d2088;
             font-size: 20px;
             margin-bottom: 0.5rem;
+            font-weight: bold;
         }
-        .content{
+        .subContent{
             color: white;
-            width: 50%;
-            font-size: 12px;
+            font-size: 14px;
         }
     }
     .block2{
-        width: 55%;
         display: flex;
         justify-content: end;
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
+        @include forM(){
+            justify-content: start;
+        }
         .button{
             width: auto;
             color: #ea5550;
@@ -132,20 +190,49 @@
             padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            @include forM(){
+                padding: 0.1rem 1rem;
+            }
         }
     }
     .block3{
-        color: white;
-        font-size: 12px;
-        position: absolute;
-        bottom: 9.2rem;
-        width: 32%;
-        left: 13rem;
+        width: 100%;
+        height: 40%;
+        margin-top: 2rem;
+        @include forM(){
+            margin-top: 0rem;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/black_page/flim_talk.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            @include forM(){
+                background-image: url(../images/black_page/flim_talk_M.png);
+            }
+            .text{
+                width: 70%;
+                font-size: 13px;
+                color: white;
+                padding-left: 28%;
+                padding-top: 10%;
+                @include forM(){
+                    padding-left: 38%;
+                    padding-top: 4%;
+                    width: 65%;
+                    font-size: 11px;
+                    margin-top: 2rem;
+                }
+            }
+        }
     }
 }
 
 .music{
-    background-image: url(../images/black_page/music.png);
+    // background-image: url(../images/black_page/music.png);
+    background-color: #ffc000;
     position: relative;
     .block1{
         margin-left: 4.5rem;

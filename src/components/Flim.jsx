@@ -1,28 +1,46 @@
 import React from 'react';
-import './styles/page_black.scss'
+import './styles/page_black.scss';
+import flim_title from './images/black_page/flim_title.png';
+import flim_talk from './images/black_page/flim_talk.png';
+import flim_pie from './images/black_page/flim_pie.png';
 
 const Flim = () => {
     
     return (
         <div className="flim">
-            <div className="block1">
-                {/* <div className="title">
-                    影視串流的滲透影響了影視產業什麼？
-                </div> */}
-                <div className="content">
-                    2019年底COVID-19爆發後，全球紛紛歷經封城及解封的循環，居民居家時間大幅增加
-                    ，對於影視收視和遊戲等娛樂的需求也隨之上升。國際影視串流平臺就在近年積極布局
-                    全球，疫情助推了對串流影視內容的收視需求，也讓國際串流服務業者在搶食各國影視
-                    內容消費市場的同時，加速調整拓展策略。
+            <div className='title'>
+                <img src={flim_title} />
+            </div>
+            <div className='content'>
+                <div className='blockWrap'>
+                    <div className="block1">
+                        <div className="subTitle">
+                            影視串流的滲透影響了影視產業什麼？
+                        </div>
+                        <div className="subContent">
+                            2019年底COVID-19爆發後，全球紛紛歷經封城及解封的循環，居民居家時間大幅增加
+                            ，對於影視收視和遊戲等娛樂的需求也隨之上升。國際影視串流平臺就在近年積極布局
+                            全球，疫情助推了對串流影視內容的收視需求，也讓國際串流服務業者在搶食各國影視
+                            內容消費市場的同時，加速調整拓展策略。
+                        </div>
+                    </div>
+                    <div className="block2">
+                        <div className="button">MORE+</div>
+                    </div>
+                    <div className='block3'>
+                        <div className='img'>
+                            <div className="text">
+                                法國為維護本土電視頻道的生存，另針對窗口期推出適用於付費電視、免費電視
+                                及訂閱服務的新規定：國去36個月的院線窗口期調整為15至17個月，而法國免費
+                                電視頻道享有1個月個月的獨家播映窗口期。
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="block2">
-                <div className="button">MORE+</div>
-            </div>
-            <div className="block3">
-                法國為維護本土電視頻道的生存，另針對窗口期推出適用於付費電視、免費電視
-                及訂閱服務的新規定：國去36個月的院線窗口期調整為15至17個月，而法國免費
-                電視頻道享有1個月個月的獨家播映窗口期。
+                <div className='flim_pie'>
+                    <div className='text'>韓國政府對OTT產業之政策關鍵角色關係———</div>
+                    <img src={flim_pie}/>
+                </div>
             </div>
         </div>
     );
