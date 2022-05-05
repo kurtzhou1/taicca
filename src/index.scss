@@ -55,29 +55,3 @@ body {
         height: 55vh;
     }
 }
-
-.page_black{
-    height: 80vh;
-    // width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    >div{
-        height: 100%;
-        width: 60%;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    &.first {
-        padding-top: 3rem;
-    }
-    &.tune1 {
-        height: 72vh;
-    }
-    &.tune2 {
-        height: 66vh;
-    }
-    &.tune3 {
-        height: 46vh;
-    }
-}

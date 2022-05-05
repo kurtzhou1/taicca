@@ -17,7 +17,7 @@ const Containers = () => {
     return (
         <div className="App">
             <div className='page'><Kv /></div>
-            <div className='page_black first'><Focus /></div>
+            <div className='page_black focusPage'><Focus /></div>
             <div className='page_black'><Comic /></div>
             <div className='page_black tune1'><Flim /></div>
             <div className='page_black tune2'><Music /></div>

@@ -1,9 +1,49 @@
+@mixin forM {
+    @media screen and (max-width: 980px) {
+        @content;
+    }
+}
+
+.page_black{
+    height: 80vh;
+    // width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    >div{
+        height: 100%;
+        width: 60%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &.focusPage {
+        padding-top: 3rem;
+        @include forM(){
+            height: 94vh;
+        }
+    }
+    &.tune1 {
+        height: 72vh;
+    }
+    &.tune2 {
+        height: 66vh;
+    }
+    &.tune3 {
+        height: 46vh;
+    }
+}
+
 .focus{
     background-image: url(../images/black_page/focus.png);
+    @include forM(){
+        background-image: url(../images/black_page/focus_M.png);
+        width: 84% !important;
+        background-size: cover !important;
+    }
 }
 
 .comic{
-    background-image: url(../images/black_page/comic.png);
+    // background-image: url(../images/black_page/comic.png);
     position: relative;
     .block1{
         margin-left: 4.5rem;
