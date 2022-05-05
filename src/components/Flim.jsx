@@ -1,7 +1,5 @@
 import React from 'react';
 import './styles/page_black.scss';
-import flim_title from './images/black_page/flim_title.png';
-import flim_talk from './images/black_page/flim_talk.png';
 import flim_pie from './images/black_page/flim_pie.png';
 
 const Flim = () => {
@@ -9,7 +7,6 @@ const Flim = () => {
     return (
         <div className="flim">
             <div className='title'>
-                <img src={flim_title} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>

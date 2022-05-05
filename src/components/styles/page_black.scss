@@ -28,11 +28,14 @@
     &.flimPage {
         height: 70vh;
         @include forM(){
-            height: 100vh;
+            height: 95vh;
         }
     }
     &.musicPage {
         height: 66vh;
+        @include forM(){
+            height: 95vh;
+        }
     }
     &.tune3 {
         height: 46vh;
@@ -119,20 +122,27 @@
         font-size: 15px;
     }
     .title{
-        img{
-            width: 100%;
+        width: 100%;
+        height: 15%;
+        background-image: url(../images/black_page/flim_title.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include forM(){
+            background-image: url(../images/black_page/flim_title_M.png);
+            height: 4%;
+            margin-bottom: 1rem;
         }
     }
     .content{
         width: 100%;
         display: flex;
+        height: 88%;
         @include forM(){
             flex-direction: column;
         }
         .blockWrap{
             width: 60%;
             padding-left: 1rem;
-            height: 88%;
             @include forM(){
                 width: 100%;
                 padding: 0;
@@ -169,10 +179,16 @@
             font-size: 20px;
             margin-bottom: 0.5rem;
             font-weight: bold;
+            @include forM(){
+                font-size: 15px;
+            }
         }
         .subContent{
             color: white;
             font-size: 14px;
+            @include forM(){
+                font-size: 13px;
+            }
         }
     }
     .block2{
@@ -234,26 +250,98 @@
     // background-image: url(../images/black_page/music.png);
     background-color: #ffc000;
     position: relative;
+    position: relative;
+    padding: 2rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+    @include forM(){
+        font-size: 15px;
+    }
+    .title{
+        width: 100%;
+        height: 15%;
+        background-image: url(../images/black_page/music_title.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include forM(){
+            background-image: url(../images/black_page/music_title_M.png);
+            height: 4%;
+            margin-bottom: 1rem;
+        }
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        height: 88%;
+        @include forM(){
+            flex-direction: column;
+        }
+        .blockWrap{
+            width: 60%;
+            padding-left: 1rem;
+            @include forM(){
+                width: 100%;
+                padding: 0;
+            }
+        }
+        .flim_pie{
+            width: 40%;
+            margin-left: 1rem;
+            height: 100%;
+            @include forM(){
+                width: 100%;
+                margin-top: 1rem;
+                margin-left: 0;
+            }
+            .text{
+                font-size: 12px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                bottom: 9%;
+                width: 37%;
+                position: absolute;
+                @include forM(){
+                    bottom: 15%;
+                    width: 85%;
+                }
+            }
+            img{
+                width: 100%;
+                height: 90%;
+                margin-top: 10%;
+                @include forM(){
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
     .block1{
-        margin-left: 4.5rem;
-        margin-top: 9.5rem;
-        // .title{
-        //     color: #fff67f;
-        //     width: 50%;
-        //     font-size: 20px;
-        //     margin-bottom: 0.5rem;
-        // }
-        .content{
+        // margin-left: 4.5rem;
+        // margin-top: 9rem;
+        .subTitle{
+            color: #796baf;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            @include forM(){
+                font-size: 15px;
+            }
+        }
+        .subContent{
             color: white;
-            width: 50%;
-            font-size: 12px;
+            font-size: 14px;
+            @include forM(){
+                font-size: 13px;
+            }
         }
     }
     .block2{
-        width: 55%;
         display: flex;
         justify-content: end;
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
+        @include forM(){
+            justify-content: start;
+        }
         .button{
             width: auto;
             color: #ffc000;
@@ -262,15 +350,45 @@
             padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            @include forM(){
+                padding: 0.1rem 1rem;
+            }
         }
     }
     .block3{
-        color: white;
-        font-size: 12px;
+        width: 60%;
+        height: 35%;
         position: absolute;
-        bottom: 6rem;
-        width: 32%;
-        right: 7rem;
+        left: 0;
+        bottom: 0;
+        @include forM(){
+            margin-top: 0rem;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/black_page/music_man.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            @include forM(){
+                display: none;
+            }
+            .text{
+                width: 70%;
+                font-size: 13px;
+                color: white;
+                padding-left: 28%;
+                padding-top: 10%;
+                @include forM(){
+                    padding-left: 38%;
+                    padding-top: 4%;
+                    width: 65%;
+                    font-size: 11px;
+                    margin-top: 2rem;
+                }
+            }
+        }
     }
 }
 
