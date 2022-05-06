@@ -26,7 +26,6 @@ const Music = () => {
                     </div>
                     <div className='block3'>
                         <div className='img'>
-                           
                         </div>
                     </div>
                 </div>
