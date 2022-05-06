@@ -39,6 +39,9 @@
     }
     &.gamePage {
         height: 46vh;
+        @include forM(){
+            height: 70vh;
+        }
     }
 }
 
@@ -129,7 +132,7 @@
         background-repeat: no-repeat;
         @include forM(){
             background-image: url(../images/black_page/flim_title_M.png);
-            height: 4%;
+            height: 6%;
             margin-bottom: 1rem;
         }
     }
@@ -278,7 +281,7 @@
         background-repeat: no-repeat;
         @include forM(){
             background-image: url(../images/black_page/music_title_M.png);
-            height: 4%;
+            height: 6%;
             margin-bottom: 1rem;
         }
     }
@@ -432,7 +435,7 @@
         background-repeat: no-repeat;
         @include forM(){
             background-image: url(../images/black_page/game_title_M.png);
-            height: 4%;
+            height: 9%;
             margin-bottom: 1rem;
         }
     }
@@ -492,11 +495,17 @@
     }
     .game_man{
         position: absolute;
+        right: 0;
+        top: 0;
         background-image: url(../images/black_page/game_man.png);
-        width: 100%;
-        height: 60%;
+        width: 40%;
+        height: 100%;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
+        @include forM(){
+            background-position: bottom;
+            width: 60%;
+        }
     }
 }

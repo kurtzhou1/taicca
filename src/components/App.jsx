@@ -18,11 +18,11 @@ const Containers = () => {
         <div className="App">
             <div className='page'><Kv /></div>
             <div className='page_black focusPage'><Focus /></div>
-            <div className='page_black comicPage'><Comic /></div>
+            {/* <div className='page_black comicPage'><Comic /></div> */}
             <div className='page_black flimPage'><Flim /></div>
             <div className='page_black musicPage'><Music /></div>
             <div className='page_black gamePage'><Game /></div>
-            <div className='page section2'><Cross /></div>
+            {/* <div className='page section2'><Cross /></div>
             <div className='page section2 gary tune4'>
                 <div className='mask'>
                     <Publish />
@@ -43,7 +43,7 @@ const Containers = () => {
                 <div className='mask'>
                     <CrossSection3 />
                 </div>
-            </div>     
+            </div>      */}
             {/* <section id="HOME"><Home/></section>
             <section id="ABOUT"><About/></section>
             <section id="PROJECT"><Project /></section> */}
