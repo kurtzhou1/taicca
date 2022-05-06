@@ -37,7 +37,7 @@
             height: 90vh;
         }
     }
-    &.tune3 {
+    &.gamePage {
         height: 46vh;
     }
 }
@@ -272,7 +272,7 @@
     }
     .title{
         width: 100%;
-        height: 15%;
+        height: 16%;
         background-image: url(../images/black_page/music_title.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -417,28 +417,66 @@
 }
 
 .game{
-    background-image: url(../images/black_page/game.png);
+    background-color: #3a499d;
     position: relative;
+    padding: 2rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+    @include forM(){
+        font-size: 15px;
+    }
+    .title{
+        width: 100%;
+        height: 27%;
+        background-image: url(../images/black_page/game_title.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include forM(){
+            background-image: url(../images/black_page/game_title_M.png);
+            height: 4%;
+            margin-bottom: 1rem;
+        }
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        height: 88%;
+        @include forM(){
+            flex-direction: column;
+        }
+        .blockWrap{
+            width: 60%;
+            padding-left: 1rem;
+            @include forM(){
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
     .block1{
-        margin-left: 4.5rem;
-        margin-top: 8.5rem;
-        // .title{
-        //     color: #fff67f;
-        //     width: 50%;
-        //     font-size: 20px;
-        //     margin-bottom: 0.5rem;
-        // }
-        .content{
+        .subTitle{
+            color: #c3d956;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            @include forM(){
+                font-size: 15px;
+            }
+        }
+        .subContent{
             color: white;
-            width: 50%;
-            font-size: 12px;
+            font-size: 14px;
+            @include forM(){
+                font-size: 13px;
+            }
         }
     }
     .block2{
-        width: 55%;
         display: flex;
         justify-content: end;
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
+        @include forM(){
+            justify-content: start;
+        }
         .button{
             width: auto;
             color: #3a499d;
@@ -447,6 +485,18 @@
             padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            @include forM(){
+                padding: 0.1rem 1rem;
+            }
         }
+    }
+    .game_man{
+        position: absolute;
+        background-image: url(../images/black_page/game_man.png);
+        width: 100%;
+        height: 60%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

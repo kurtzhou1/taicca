@@ -6,8 +6,7 @@ const Music = () => {
     
     return (
         <div className="music">
-             <div className='title'>
-            </div>
+            <div className='title' />
             <div className='content'>
                 <div className='blockWrap'>
                     <div className="block1">

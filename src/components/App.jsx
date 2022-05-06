@@ -21,7 +21,7 @@ const Containers = () => {
             {/* <div className='page_black'><Comic /></div> */}
             <div className='page_black flimPage'><Flim /></div>
             <div className='page_black musicPage'><Music /></div>
-            <div className='page_black tune3'><Game /></div>
+            <div className='page_black gamePage'><Game /></div>
             <div className='page section2'><Cross /></div>
             <div className='page section2 gary tune4'>
                 <div className='mask'>
