@@ -185,7 +185,6 @@
         }
         .comic_chart{
             width: 40%;
-            margin-left: 1rem;
             @include forM(){
                 width: 100%;
                 margin-top: 1rem;
@@ -199,7 +198,7 @@
             }
             .chart{
                 width: 100%;
-                margin-top: 5rem;
+                height: 100%;
                 @include forM(){
                     margin-top: 1rem;
                 }
