@@ -22,22 +22,27 @@ const Containers = () => {
             <div className='page_black flimPage'><Flim /></div>
             <div className='page_black musicPage'><Music /></div>
             <div className='page_black tune3'><Game /></div>
+            {/* 產業研究(跨域) */}
             <div className='page section2'><Cross /></div>
+            {/* 產業研究(出版) */}
             <div className='page section2 gary tune4'>
                 <div className='mask'>
                     <Publish />
                 </div>
             </div>
+            {/* 產業研究(影視) */}
             <div className='page section2 tune4'>
                 <div className='mask'>
                     <FilmSection2 />
                 </div>
-            </div>     
+            </div>
+            {/* 產業研究(表演藝術) */}
             <div className='page section2 gary tune5'>
                 <div className='mask'>
                     <Performance />
                 </div>
-            </div>     
+            </div>
+            {/* 國際動態(影視) */}
             <div className='page section2 tune6'><FilmSection3 /></div> 
             <div className='page section2 gary tune5'>
                 <div className='mask'>
