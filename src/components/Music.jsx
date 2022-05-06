@@ -1,13 +1,12 @@
 import React from 'react';
 import './styles/page_black.scss';
-import music_jay from './images/black_page/music_jay.png';
+// import music_jay from './images/black_page/music_jay.png';
 
 const Music = () => {
     
     return (
         <div className="music">
-             <div className='title'>
-            </div>
+            <div className='title' />
             <div className='content'>
                 <div className='blockWrap'>
                     <div className="block1">
@@ -31,12 +30,14 @@ const Music = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flim_pie'>
-                    <img src={music_jay}/>
-                     <div className="text">
+                <div className='music_jay'>
+                    <div className='img' />
+                    <div className='black1' />
+                    <div className='text'>
                         周杰倫潮牌「PHANTACi」與Ezek平臺聯名推出的「Phanta Bear」NFT，不僅在NFT市場刷新
                         世界紀錄，甚至躍上紐約時報廣場那斯達克電視牆。
                     </div>
+                    <div className='black2' />
                 </div>
             </div>
         </div>

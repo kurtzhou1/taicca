@@ -34,11 +34,14 @@
     &.musicPage {
         height: 66vh;
         @include forM(){
-            height: 95vh;
+            height: 90vh;
         }
     }
-    &.tune3 {
+    &.gamePage {
         height: 46vh;
+        @include forM(){
+            height: 70vh;
+        }
     }
 }
 
@@ -129,7 +132,7 @@
         background-repeat: no-repeat;
         @include forM(){
             background-image: url(../images/black_page/flim_title_M.png);
-            height: 4%;
+            height: 6%;
             margin-bottom: 1rem;
         }
     }
@@ -214,33 +217,47 @@
     .block3{
         width: 100%;
         height: 40%;
-        margin-top: 2rem;
-        @include forM(){
-            margin-top: 0rem;
+        margin-top: 1rem;
+        .imgWrap{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
         }
         .img{
-            width: 100%;
+            width: 40%;
             height: 100%;
             background-image: url(../images/black_page/flim_talk.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             @include forM(){
-                background-image: url(../images/black_page/flim_talk_M.png);
+                width: 35%;
+                background-image: url(../images/black_page/flim_talk.png);
             }
-            .text{
-                width: 70%;
-                font-size: 13px;
-                color: white;
-                padding-left: 28%;
-                padding-top: 10%;
-                @include forM(){
-                    padding-left: 38%;
-                    padding-top: 4%;
-                    width: 65%;
-                    font-size: 11px;
-                    margin-top: 2rem;
-                }
+        }
+        .text{
+            width: 60%;
+            height: 95%;
+            font-size: 13px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include forM(){
+                font-size: 12px;
+                width: 65%;
+                height: 100%;
+            }
+            .black1{
+                height: 4%;
+                width: 100%;
+                background: black;
+            }
+            .black2{
+                height: 2%;
+                width: 100%;
+                background: black;
             }
         }
     }
@@ -258,13 +275,13 @@
     }
     .title{
         width: 100%;
-        height: 15%;
+        height: 16%;
         background-image: url(../images/black_page/music_title.png);
         background-size: cover;
         background-repeat: no-repeat;
         @include forM(){
             background-image: url(../images/black_page/music_title_M.png);
-            height: 4%;
+            height: 6%;
             margin-bottom: 1rem;
         }
     }
@@ -283,35 +300,45 @@
                 padding: 0;
             }
         }
-        .flim_pie{
+        .music_jay{
             width: 40%;
             margin-left: 1rem;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             @include forM(){
                 width: 100%;
                 margin-top: 1rem;
                 margin-left: 0;
             }
+            .img{
+                background-image: url(../images/black_page/music_jay.png);
+                width: 100%;
+                height: 60%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
             .text{
-                font-size: 12px;
+                font-size: 14px;
                 color: white;
-                font-weight: bold;
-                text-align: center;
-                bottom: 9%;
-                width: 37%;
-                position: absolute;
+                margin: 1rem 0.5rem;
                 @include forM(){
                     bottom: 15%;
                     width: 85%;
                 }
             }
-            img{
+            .black1{
                 width: 100%;
-                height: 90%;
-                margin-top: 10%;
-                @include forM(){
-                    margin-top: 1rem;
-                }
+                height: 2%;
+                background: black;
+            }
+            .black2{
+                width: 100%;
+                height: 1%;
+                background: black;
             }
         }
     }
@@ -393,28 +420,66 @@
 }
 
 .game{
-    background-image: url(../images/black_page/game.png);
+    background-color: #3a499d;
     position: relative;
+    padding: 2rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+    @include forM(){
+        font-size: 15px;
+    }
+    .title{
+        width: 100%;
+        height: 27%;
+        background-image: url(../images/black_page/game_title.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include forM(){
+            background-image: url(../images/black_page/game_title_M.png);
+            height: 9%;
+            margin-bottom: 1rem;
+        }
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        height: 88%;
+        @include forM(){
+            flex-direction: column;
+        }
+        .blockWrap{
+            width: 60%;
+            padding-left: 1rem;
+            @include forM(){
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
     .block1{
-        margin-left: 4.5rem;
-        margin-top: 8.5rem;
-        // .title{
-        //     color: #fff67f;
-        //     width: 50%;
-        //     font-size: 20px;
-        //     margin-bottom: 0.5rem;
-        // }
-        .content{
+        .subTitle{
+            color: #c3d956;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            @include forM(){
+                font-size: 15px;
+            }
+        }
+        .subContent{
             color: white;
-            width: 50%;
-            font-size: 12px;
+            font-size: 14px;
+            @include forM(){
+                font-size: 13px;
+            }
         }
     }
     .block2{
-        width: 55%;
         display: flex;
         justify-content: end;
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
+        @include forM(){
+            justify-content: start;
+        }
         .button{
             width: auto;
             color: #3a499d;
@@ -423,6 +488,24 @@
             padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            @include forM(){
+                padding: 0.1rem 1rem;
+            }
+        }
+    }
+    .game_man{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url(../images/black_page/game_man.png);
+        width: 40%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        @include forM(){
+            background-position: bottom;
+            width: 60%;
         }
     }
 }
