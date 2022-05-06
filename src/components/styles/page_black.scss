@@ -5,11 +5,11 @@
 }
 
 .page_black{
-    height: 80vh;
     // width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
+    padding-bottom: 1.5rem;
     >div{
         height: 100%;
         width: 60%;
@@ -20,6 +20,7 @@
         }
     }
     &.focusPage {
+        height: 90vh;
         padding-top: 3rem;
         @include forM(){
             height: 110vh;
@@ -46,13 +47,99 @@
 }
 
 .focus{
-    background-image: url(../images/black_page/focus.png);
-    @include forM(){
-        background-image: url(../images/black_page/focus_M.png);
-        width: 95% !important;
-        background-size: cover !important;
+    // background-image: url(../images/black_page/focus.png);
+    color: white;
+    font-weight: bold;
+    position: relative;
+    .title{
+        background-image: url(../images/black_page/focus_title.png);
+        width: 100%;
+        height: 23%;
         background-repeat: no-repeat;
+        background-size: contain;
         background-position: center;
+    }
+    .subTitle{
+        text-align: center;
+        font-size: 24px;
+        margin: 1rem 0;
+        @include forM(){
+            margin: 0 0 1rem 0;
+        }
+    }
+    .content{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        >div{
+            width: 65%;
+            margin: 0.5rem 0;
+            font-size: 14px;
+            @include forM(){
+                width: 100%;
+            }
+        }
+    }
+    .focusImg{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30%;
+        @include forM(){
+            height: 15%;
+        }
+    }
+    .focusComic{
+        top: 0;
+        left: 0;
+        background-image: url(../images/black_page/focus_comic.png);
+        background-position: left;
+        width: 30%;
+        @include forM(){
+            bottom: 0;
+            top: initial;
+            background-position: bottom;
+        }
+    }
+    .focusGame{
+        top: 1rem;
+        right: 0;
+        background-image: url(../images/black_page/focus_game.png);
+        background-position: right;
+        width: 30%;
+        @include forM(){
+            bottom: 1rem;
+            top: initial;
+            background-position: top;
+        }
+    }
+    .focusFlim{
+        bottom: 3rem;
+        left: 0;
+        background-image: url(../images/black_page/focus_flim.png);
+        background-position: center;
+        width: 25%;
+        @include forM(){
+            left: 25%;
+            background-position: top;
+            width: 30%;
+        }
+    }
+    .focusMusic{
+        bottom: 0;
+        right: 0;
+        background-image: url(../images/black_page/focus_music.png);
+        background-position: center;
+        width: 25%;
+        @include forM(){
+            right: 25%;
+            background-position: bottom;
+            width: 30%;
+        }
     }
 }
 
