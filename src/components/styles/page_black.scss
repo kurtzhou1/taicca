@@ -26,6 +26,9 @@
             height: 110vh;
         }
     }
+    &.comicPage {
+        height: 80vh;
+    }
     &.flimPage {
         height: 70vh;
         @include forM(){
@@ -223,7 +226,7 @@
     }
     .block2{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin-top: 0.5rem;
         @include forM(){
             justify-content: start;
@@ -342,7 +345,7 @@
     }
     .block2{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin-top: 0.5rem;
         @include forM(){
             justify-content: start;
@@ -509,7 +512,7 @@
     }
     .block2{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin-top: 0.5rem;
         @include forM(){
             justify-content: start;
@@ -620,7 +623,7 @@
     }
     .block2{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin-top: 0.5rem;
         @include forM(){
             justify-content: start;
@@ -647,7 +650,7 @@
         height: 100%;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: right 0 bottom 0;
         @include forM(){
             width: 60%;
         }
