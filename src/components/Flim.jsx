@@ -25,13 +25,19 @@ const Flim = () => {
                         <div className="button">MORE+</div>
                     </div>
                     <div className='block3'>
-                        <div className='img'>
+                        <div className='imgWrap'>
+                            <div className='img' />
                             <div className="text">
-                                法國為維護本土電視頻道的生存，另針對窗口期推出適用於付費電視、免費電視
-                                及訂閱服務的新規定：國去36個月的院線窗口期調整為15至17個月，而法國免費
-                                電視頻道享有1個月個月的獨家播映窗口期。
+                                    <div className='black1' />
+                                    <div>
+                                        法國為維護本土電視頻道的生存，另針對窗口期推出適用於付費電視、免費電視
+                                        及訂閱服務的新規定：國去36個月的院線窗口期調整為15至17個月，而法國免費
+                                        電視頻道享有1個月個月的獨家播映窗口期。
+                                    </div>
+                                    <div className='black2' />
                             </div>
                         </div>
+                  
                     </div>
                 </div>
                 <div className='flim_pie'>
