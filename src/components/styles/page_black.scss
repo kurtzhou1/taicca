@@ -38,7 +38,7 @@
         }
     }
     &.gamePage {
-        height: 46vh;
+        height: 52vh;
         @include forM(){
             height: 70vh;
         }
@@ -560,9 +560,8 @@
         height: 100%;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: bottom;
         @include forM(){
-            background-position: bottom;
             width: 60%;
         }
     }

@@ -21,7 +21,7 @@ const Containers = () => {
             <div className='page_black comicPage'><Comic /></div>
             <div className='page_black flimPage'><Flim /></div>
             <div className='page_black musicPage'><Music /></div>
-            <div className='page_black tune3'><Game /></div>
+            <div className='page_black gamePage'><Game /></div>
             {/* 產業研究(跨域) */}
             <div className='page section2'><Cross /></div>
             {/* 產業研究(出版) */}
