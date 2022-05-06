@@ -95,29 +95,34 @@ const Comic = () => {
                     </div>
                 </div>
                 <div className='comic_chart'>
+                    <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
+                    
                     <div className='chart'>
-                    <ResponsiveContainer>
-                        <ComposedChart
-                            width={500}
-                            height={400}
-                            data={data}
-                            // margin={{
-                            // top: 20,
-                            // right: 20,
-                            // bottom: 20,
-                            // left: 20,
-                            // }}
-                        >
-                            <CartesianGrid stroke="#f5f5f5" />
-                            <XAxis dataKey="name" scale="band" />
-                            <YAxis />
-                            {/* <Tooltip /> */}
-                            {/* <Legend /> */}
-                            <Bar dataKey="pv" barSize={60} fill="#fff67f" />
-                            <Line type="monotone" dataKey="uv" stroke="#fff67f" />
-                        </ComposedChart>
-                    </ResponsiveContainer>
+                        <div>(單位:千部)</div>
+                        <ResponsiveContainer>
+                            <ComposedChart
+                                width={500}
+                                height={400}
+                                data={data}
+                                // margin={{
+                                // top: 20,
+                                // right: 20,
+                                // bottom: 20,
+                                // left: 20,
+                                // }}
+                            >
+                                <CartesianGrid stroke="#f5f5f5" />
+                                <XAxis dataKey="name" scale="band" />
+                                <YAxis />
+                                {/* <Tooltip /> */}
+                                {/* <Legend /> */}
+                                <Bar dataKey="pv" barSize={60} fill="#fff67f" />
+                                <Line type="monotone" dataKey="uv" stroke="#fff67f" />
+                            </ComposedChart>
+                        </ResponsiveContainer>
+                        <div>(單位:年份)</div>
                     </div>
+                
                     <div className='text'>
                         韓根據KOCCA的統計觀察，韓國網路漫畫新作品於2013年至2016年的產量，
                         從原本的382部增加到1,971部，短短三年內突增了1,589部，成長超過五倍。
