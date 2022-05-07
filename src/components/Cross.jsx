@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/section2.scss'
+// import './styles/section2.scss'
 
 const Cross = () => {
     
