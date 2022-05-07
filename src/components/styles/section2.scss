@@ -1,102 +1,130 @@
-.cross{
-    background-image: url(../images/section2/cross.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+
+// 共同樣式
+.section_2_block{
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
     .blockWrap{
-        width: 67%;
-        margin-top: 10.5rem;
+        width: 1200px;
+        max-width: 100%;
+        padding:0 15px;
+        margin: auto;
+    }
+    .block_title_h1{
+        width: 100%;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .block_title_h2{
+        width: 100%;
+        margin-bottom: 20px;
+        img{
+            max-height: 30px;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        p{
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            line-height: 1.5;
+        }
+        @media screen and (max-width:990px) {
+            img{
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .block_title_h3{
+        color: #5c148b;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .content_block{
+        width: 750px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .content_txt{
+        font-size: 16px;
+        line-height: 1.6;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .more_btn{
+        display: inline-block;
+        padding: 4px 15px;
+        background: #000;
+        color: #fff;
+        font-size: 16px;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            background: #5c148b;
+        }
+    }
+}
+
+// 產業研究(跨域)
+.cross{
+    .subContent_block{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        margin-bottom: 1.5rem;
-        .block1{
-            .title{
-                font-size: 20px;
-                font-weight: bold;
-            }
-            .content{
-                font-size: 15px;
-                font-weight: bold;
-            }
-            .subContent{
-                color: #5c148b;
-                font-weight: bold;
-            }
-        }
-        .block2{
-            >div{
-                font-size: 15px;
-                font-weight: bold;
-                margin: 1rem 0 1rem 18rem;
-            }
-        }
-        .block3{
+        flex-wrap: wrap;
+        align-items: center;
+        .data_box{
+            width: 40%;
             display: flex;
-            justify-content: end;
-            margin-top: 0.3rem;
-            .button{
-                width: auto;
-                color: white;
-                background-color: black;
-                border-radius: 1px;
-                padding: 0.05rem 3rem;
-                font-family: sans-serif;
-                font-weight: bold;
+            img{
+                width: 100%;
+                max-width: 250px;
+                margin: auto;
+            }
+        }
+        .describe_box{
+            width: 60%;
+            
+            p{
+                font-size: 16px;
+                color: #000;
+                line-height: 1.5;
+                span{
+                    color: #5c148b;
+                }
+            }
+        }
+        .btn_box{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media screen and (max-width:990px){
+            flex-wrap: wrap;
+            .data_box{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .describe_box{
+                width: 100%;
             }
         }
     }
 }
 
-.publish{
-    background-image: url(../images/section2/publish.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    .blockWrap{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .block1{
-            margin-top: 2rem;
-            .title{
-                font-size: 20px;
-                font-weight: bold;
-            }
-            .content{
-                font-size: 15px;
-                font-weight: bold;
-            }
-            .subContent{
-                font-size: 12px;
-                font-weight: bold;
-                margin-top: 0.5rem;
-            }
-        }
-        .block2{
-            display: flex;
-            .text{
-                width: 80%;
-                font-size: 12px;
-                font-weight: bold;
-            }
-            .button{
-                margin-top: 1rem;
-                width: auto;
-                color: white;
-                background-color: black;
-                border-radius: 1px;
-                padding: 0.05rem 3rem;
-                font-family: sans-serif;
-                font-weight: bold;
-            }
-        }
-    }
-}
+.publish{}
+
 
 .filmSection2{
     background-image: url(../images/section2/filmSection2.png);

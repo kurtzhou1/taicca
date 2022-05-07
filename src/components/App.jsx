@@ -23,15 +23,12 @@ const Containers = () => {
             <div className='page_black musicPage'><Music /></div>
             <div className='page_black gamePage'><Game /></div>
             <div className="section_2_block">
-                <div className="block_title">
-                    <img src="" alt="" />
-                </div>
                 {/* 產業研究(跨域) */}
-                <div className='page section2'><Cross /></div>
-                
+                <div className='section_2_box'><Cross /></div>
                 {/* 產業研究(出版) */}
-                <div className='page section2'><Publish /></div>
-                <div className='page section2'><Cross /></div>
+                <div className='section_2_box'><Publish /></div>
+                
+                <div className='section_2_box'><Cross /></div>
                 <div className='page section2 gary tune4'>
                     <div className='mask'>
                         <Publish />
