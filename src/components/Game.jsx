@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './styles/page_black.scss';
 import title from './images/black_page/game_title.png';
 import title_M from './images/black_page/game_title_M.png';
+import game_man from './images/black_page/game_man.png';
 
 const Game = () => {
 
@@ -47,7 +48,9 @@ const Game = () => {
                     </div>
                 </div>
             </div>
-            <div className='game_man' />
+            <div className='game_man_box'>
+                <img src={game_man} className="game_man" />
+            </div>
         </div>
     );
 }
