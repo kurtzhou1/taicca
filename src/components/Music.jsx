@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './styles/page_black.scss';
 import title from './images/black_page/music_title.png';
 import title_M from './images/black_page/music_title_M.png';
+import music_jay from './images/black_page/music_jay.png';
 
 const Music = () => {
 
@@ -50,7 +51,7 @@ const Music = () => {
                     </div>
                 </div>
                 <div className='music_jay'>
-                    <div className='img' />
+                    <img src={music_jay} />
                     <div className='black1' />
                     <div className='text'>
                         周杰倫潮牌「PHANTACi」與Ezek平臺聯名推出的「Phanta Bear」NFT，不僅在NFT市場刷新

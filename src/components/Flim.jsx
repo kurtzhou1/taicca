@@ -3,6 +3,7 @@ import './styles/page_black.scss';
 import flim_pie from './images/black_page/flim_pie.png';
 import title from './images/black_page/flim_title.png';
 import title_M from './images/black_page/flim_title_M.png';
+import flim_talk from './images/black_page/flim_talk.png';
 
 const Flim = () => {
 
@@ -46,10 +47,11 @@ const Flim = () => {
                     </div>
                     <div className='block3'>
                         <div className='imgWrap'>
-                            <div className='img' />
+                            {/* <div className='img' /> */}
+                            <img src={flim_talk} />
                             <div className="text">
                                     <div className='black1' />
-                                    <div>
+                                    <div className='black_text'>
                                         法國為維護本土電視頻道的生存，另針對窗口期推出適用於付費電視、免費電視
                                         及訂閱服務的新規定：國去36個月的院線窗口期調整為15至17個月，而法國免費
                                         電視頻道享有1個月個月的獨家播映窗口期。
