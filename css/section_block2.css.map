@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/components/styles/section_block2.scss"
+    ],
+    "names": [],
+    "file": "section_block2.css"
+}

@@ -1,0 +1,138 @@
+/**start**/
+.filmSection3 {
+  background-image: url(../images/section3/filmSection3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.filmSection3 .blockWrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filmSection3 .block1 {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 86%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.filmSection3 .block1 .contentWrap {
+  margin-left: 49%;
+}
+
+.filmSection3 .block1 .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.filmSection3 .block1 .content {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.filmSection3 .block1 .button {
+  color: white;
+  background-color: black;
+  border-radius: 1px;
+  padding: 0.05rem 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.filmSection3 .block1 .block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 1rem;
+}
+
+.crossSection3Mask {
+  position: relative;
+}
+
+.crossSection3Mask .crossSection3 {
+  background-image: url(../images/section3/crossSection3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+  height: 65%;
+}
+
+.crossSection3Mask .crossSection3 .blockWrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.crossSection3Mask .crossSection3 .block1 {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.crossSection3Mask .crossSection3 .block1 .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.crossSection3Mask .crossSection3 .block1 .content {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.crossSection3Mask .specialBlock {
+  position: absolute;
+  bottom: 2rem;
+  width: 85%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #8dc55d;
+}
+
+.crossSection3Mask .block2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.crossSection3Mask .block2 .button {
+  color: white;
+  background-color: black;
+  border-radius: 1px;
+  padding: 0.05rem 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+/*# sourceMappingURL=section3.css.map */
