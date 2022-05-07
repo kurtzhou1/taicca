@@ -30,15 +30,15 @@
     }
     &.comicPage {
         // height: 80vh;
-        @include forM(){
-            height: auto;
-        }
+        // @include forM(){
+        //     height: auto;
+        // }
     }
     &.flimPage {
         // height: 70vh;
-        @include forM(){
-            height: 93vh;
-        }
+        // @include forM(){
+        //     height: 93vh;
+        // }
     }
     &.musicPage {
         height: 66vh;
