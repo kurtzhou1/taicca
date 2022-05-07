@@ -92,13 +92,7 @@ const Comic = () => {
         let targetDom =  document.getElementById("target");
         let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
         let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
-        console.log('currentY=>>', currentY);
-        console.log('start=>>', targetDomStart,'end=>>', targetDomEnd);
-        console.log( targetDomStart < currentY )
-        console.log( currentY < targetDomEnd )
-        console.log( targetDomStart < currentY && currentY < targetDomEnd  )
-
-        if( targetDomStart < currentY && currentY < targetDomEnd ) {
+        if( targetDomStart + 200 < currentY && currentY < targetDomEnd + 300 ) {
             setShowImage(true);
         } else {
             setShowImage(false);
@@ -132,9 +126,11 @@ const Comic = () => {
                     </div>
                 </div>
                 <div className='comic_chart'>
-                    <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
-                    <div className={`chart ${showImage ? 'showImage' : ''}`}>
+                    <div>
+                        <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
                         <div>(單位:千部)</div>
+                    </div>
+                    <div className={`chart ${showImage ? 'showImage' : ''}`}>
                         <ResponsiveContainer>
                             <ComposedChart
                                 width={500}
@@ -150,12 +146,14 @@ const Comic = () => {
                                 <Line type="monotone" dataKey="uv" stroke="#fff67f" />
                             </ComposedChart>
                         </ResponsiveContainer>
-                        <div>(單位:年份)</div>
                     </div>
-                
                     <div className='text'>
-                        韓根據KOCCA的統計觀察，韓國網路漫畫新作品於2013年至2016年的產量，
-                        從原本的382部增加到1,971部，短短三年內突增了1,589部，成長超過五倍。
+                        <div className='yellow'>(單位:年份)</div>
+                        <div>
+                            韓根據KOCCA的統計觀察，韓國網路漫畫新作品於2013年至2016年的產量，
+                            從原本的382部增加到1,971部，短短三年內突增了1,589部，成長超過五倍。
+                        </div>
+                        
                     </div>
                 </div>
             </div>
