@@ -1,9 +1,63 @@
-import React from 'react';
+import React,{PureComponent} from 'react';
 import './styles/section3.scss'
 import titleH2 from '../components/images/section2/s3_b3_t.png'
 import IMG from '../components/images/section2/img_music.png'
 
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+
 const Music3 = () => {
+
+    const data = [
+        {
+          name: '落日飛車',
+          pv: 22.0,
+        },
+        {
+            name: '盧廣仲',
+            pv: 14.7,
+          },
+          {
+            name: '滅火器樂團',
+            pv: 12.0,
+          },
+          {
+            name: '閃靈樂團',
+            pv: 10.8,
+          },
+          {
+            name: '拍謝少年',
+            pv: 5.7,
+          },
+          {
+            name: '宇宙人',
+            pv: 5.5,
+          },
+          {
+            name: '大象體操',
+            pv: 5.5,
+          },
+          {
+            name: 'Leo王',
+            pv: 3.5,
+          },
+          {
+            name: '9m88',
+            pv: 3.1,
+          },
+          {
+            name: '孫盛希',
+            pv: 2.8,
+          },
+          {
+            name: '八三夭',
+            pv: 2.3,
+          },
+          {
+            name: '茄子蛋',
+            pv: 2.3,
+          },
+      ];
     
     return (
         <div className="music3">
@@ -22,6 +76,25 @@ const Music3 = () => {
                     <div className="data_box">
                         <div className="l_box">
                             {/* 圖表 */}
+                            <ResponsiveContainer width="100%" height="100%">
+                                <BarChart
+                                width={500}
+                                height={300}
+                                data={data}
+                                margin={{
+                                    top: 5,
+                                    right: 30,
+                                    left: 20,
+                                    bottom: 5,
+                                }}
+                                barSize={20}
+                                >
+                                <XAxis dataKey="name" scale="point" padding={{ left: 0, right: 0 }} />
+                                <Tooltip />
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
+                                </BarChart>
+                            </ResponsiveContainer>
                         </div>
                         <div className="r_box">
                             <div className="value">
