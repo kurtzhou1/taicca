@@ -31,10 +31,12 @@ const Focus = () => {
                     從而發展出什麼樣的商業模式及產業風貌。
                 </div>
             </div>
-            <div className='focusComic focusImg' />
-            <div className='focusGame focusImg' />
-            <div className='focusFlim focusImg' />
-            <div className='focusMusic focusImg' />
+            <div className='focusImgWrap'>
+                <div className='focusComic focusImg' />
+                <div className='focusGame focusImg' />
+                <div className='focusFlim focusImg' />
+                <div className='focusMusic focusImg' />
+            </div>
         </div>
     );
 }

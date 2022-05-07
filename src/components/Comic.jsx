@@ -10,6 +10,9 @@ import {
     CartesianGrid,
   } from 'recharts';
 // import {Button, Grid, Stack, Typography} from '@mui/material'
+import title from './images/black_page/comic_title.png';
+import title_M from './images/black_page/comic_title_M.png';
+import comic_comic from './images/black_page/comic_comic.png';
 
 const Comic = () => {
 
@@ -67,6 +70,22 @@ const Comic = () => {
     ];
 
     const [showImage, setShowImage] = useState(false);
+    const [isPc, setIsPc] = useState(false);
+    useEffect(()=>{
+        if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+        ) {
+            setIsPc(false);
+        }
+        else {
+            setIsPc(true);
+        }
+    })
 
     const getElementTop = (element) => {
         let actualTop = element.offsetTop
@@ -78,6 +97,8 @@ const Comic = () => {
         return actualTop
     }
 
+  
+   
     useEffect(() => {
         //計算每個區塊
         document.addEventListener('scroll', onScroll)
@@ -92,7 +113,9 @@ const Comic = () => {
         let targetDom =  document.getElementById("target");
         let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
         let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
-        if( targetDomStart + 200 < currentY && currentY < targetDomEnd + 300 ) {
+        let startNumber = isPc ? 200 : 700 
+        let endNumber = isPc ? 300 : 500
+        if( targetDomStart + startNumber < currentY && currentY < targetDomEnd + endNumber ) {
             setShowImage(true);
         } else {
             setShowImage(false);
@@ -102,7 +125,8 @@ const Comic = () => {
 
     return (
         <div className="comic" id="target">
-            <div className='title'>
+            <div className='title' >
+                <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>
@@ -122,7 +146,7 @@ const Comic = () => {
                         <div className="button">MORE+</div>
                     </div>
                     <div className='block3'>
-                        <div className='img' />
+                        <img src={comic_comic}  width='100%' />
                     </div>
                 </div>
                 <div className='comic_chart'>
@@ -131,18 +155,19 @@ const Comic = () => {
                         <div>(單位:千部)</div>
                     </div>
                     <div className={`chart ${showImage ? 'showImage' : ''}`}>
+                        <div className='five'>5倍</div>
                         <ResponsiveContainer>
                             <ComposedChart
                                 width={500}
                                 height={400}
                                 data={data}
                             >
-                                <CartesianGrid stroke="#f5f5f5" />
-                                <XAxis dataKey="name" scale="band" />
-                                <YAxis />
+                                <CartesianGrid stroke="#fff67f" vertical={false} />
+                                <XAxis dataKey="name" scale="band" stroke="#fff67f" />
+                                <YAxis stroke="#fff67f" />
                                 {/* <Tooltip /> */}
                                 {/* <Legend /> */}
-                                <Bar dataKey="pv" barSize={60} fill="#fff67f" />
+                                <Bar dataKey="pv" barSize={200} fill="#fff67f" />
                                 <Line type="monotone" dataKey="uv" stroke="#fff67f" />
                             </ComposedChart>
                         </ResponsiveContainer>

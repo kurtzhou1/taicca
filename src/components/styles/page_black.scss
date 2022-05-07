@@ -25,17 +25,17 @@
         height: 90vh;
         padding-top: 3rem;
         @include forM(){
-            height: 130vh;
+            height: auto;
         }
     }
     &.comicPage {
-        height: 80vh;
+        // height: 80vh;
         @include forM(){
-            height: 120vh;
+            height: auto;
         }
     }
     &.flimPage {
-        height: 70vh;
+        // height: 70vh;
         @include forM(){
             height: 93vh;
         }
@@ -66,6 +66,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        @include forM(){
+            height: 200px;
+        }
     }
     .subTitle{
         text-align: center;
@@ -78,7 +81,6 @@
     }
     .content{
         width: 100%;
-        height: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -96,15 +98,19 @@
             }
         }
     }
-    .focusImg{
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 40%;
-        @include forM(){
-            height: 15%;
+    .focusImgWrap{
+        height: 220px;
+        .focusImg{
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 40%;
+            @include forM(){
+                height: 15%;
+            }
         }
     }
+ 
     .focusComic{
         top: 0;
         left: 100px;
@@ -168,15 +174,10 @@
         font-size: 15px;
     }
     .title{
-        width: 100%;
-        height: 17%;
-        background-image: url(../images/black_page/comic_title.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-top: 1rem;
         @include forM(){
-            background-image: url(../images/black_page/comic_title_M.png);
-            height: 6%;
             margin-bottom: 1rem;
+            overflow: hidden;
         }
     }
     .content{
@@ -189,17 +190,14 @@
         }
         .blockWrap{
             width: 60%;
-            height: 100%;
-            padding-left: 1rem;
+            padding: 0 1rem;
             @include forM(){
                 width: 100%;
-                height: 55%;
                 padding: 0;
             }
         }
         .comic_chart{
             width: 40%;
-            height: 100%;
             color: #fff67f;
             font-size: 12px;
             display: flex;
@@ -208,6 +206,7 @@
             @include forM(){
                 width: 100%;
                 height: 50%;
+                height: 480px;
                 // margin-top: 1rem;
                 margin-left: 0;
             }
@@ -216,15 +215,15 @@
                 color: white;
                 font-weight: bold;
                 margin-bottom: 1rem;
-                @include forM(){
-                    margin-bottom: 0rem;
-                }
+                // @include forM(){
+                //     margin-bottom: 0rem;
+                // }
                 .yellow{
                     color: #fff67f;
                 }
             }
             .chart{
-                width: 45%;
+                width: 42%;
                 height: 75%;
                 margin-top: 5%;
                 position: absolute;
@@ -232,11 +231,18 @@
                 display: none;
                 @include forM(){
                     width: 120%;
-                    height: 35%;
+                    height: 350px;
                     margin-top: 2rem;
                 }
                 &.showImage{
                     display: block;
+                    .five{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -244,7 +250,7 @@
     .block1{
         .subTitle{
             color: #fff67f;
-            font-size: 20px;
+            font-size: 24px;
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
@@ -253,7 +259,7 @@
         }
         .subContent{
             color: white;
-            font-size: 14px;
+            font-size: 16px;
             @include forM(){
                 font-size: 13px;
             }
@@ -281,22 +287,19 @@
     }
     .block3{
         width: 100%;
-        height: 40%;
-        margin-top: 1rem;
-        @include forM(){
-            margin-top: 0;
-        }
-        .img{
-            width: 100%;
-            height: 100%;
-            background-image: url(../images/black_page/comic_comic.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            @include forM(){
-                width: 100%;
-            }
-        }
+        // height: 300px;
+        margin: 1rem 0;
+        // .img{
+        //     width: 100%;
+        //     height: 100%;
+        //     background-image: url(../images/black_page/comic_comic.png);
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-size: contain;
+        //     @include forM(){
+        //         width: 100%;
+        //     }
+        // }
     }
 }
 
@@ -309,15 +312,10 @@
         font-size: 15px;
     }
     .title{
-        width: 100%;
-        height: 20%;
-        background-image: url(../images/black_page/flim_title.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-top: 1rem;
         @include forM(){
-            background-image: url(../images/black_page/flim_title_M.png);
-            height: 6%;
             margin-bottom: 1rem;
+            overflow: hidden;
         }
     }
     .content{
@@ -329,7 +327,7 @@
         }
         .blockWrap{
             width: 60%;
-            padding-left: 1rem;
+            padding: 0 1rem;
             @include forM(){
                 width: 100%;
                 padding: 0;
@@ -351,10 +349,7 @@
             }
             img{
                 width: 100%;
-                margin-top: 2.5rem;
-                @include forM(){
-                    margin-top: 1rem;
-                }
+                margin-top: 1rem;
             }
         }
     }
@@ -363,7 +358,7 @@
         // margin-top: 9rem;
         .subTitle{
             color: #1d2088;
-            font-size: 20px;
+            font-size: 24px;
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
@@ -372,7 +367,7 @@
         }
         .subContent{
             color: white;
-            font-size: 14px;
+            font-size: 16px;
             @include forM(){
                 font-size: 13px;
             }
@@ -417,7 +412,6 @@
             background-size: contain;
             @include forM(){
                 width: 35%;
-                background-image: url(../images/black_page/flim_talk.png);
             }
         }
         .text{
@@ -457,15 +451,10 @@
         font-size: 15px;
     }
     .title{
-        width: 100%;
-        height: 21%;
-        background-image: url(../images/black_page/music_title.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-top: 1rem;
         @include forM(){
-            background-image: url(../images/black_page/music_title_M.png);
-            height: 6%;
             margin-bottom: 1rem;
+            overflow: hidden;
         }
     }
     .content{
@@ -477,7 +466,7 @@
         }
         .blockWrap{
             width: 60%;
-            padding-left: 1rem;
+            padding: 0 1rem;
             @include forM(){
                 width: 100%;
                 padding: 0;
@@ -530,7 +519,7 @@
         // margin-top: 9rem;
         .subTitle{
             color: #796baf;
-            font-size: 20px;
+            font-size: 24px;
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
@@ -539,7 +528,7 @@
         }
         .subContent{
             color: white;
-            font-size: 14px;
+            font-size: 16px;
             @include forM(){
                 font-size: 13px;
             }
@@ -611,15 +600,10 @@
         font-size: 15px;
     }
     .title{
-        width: 100%;
-        height: 29%;
-        background-image: url(../images/black_page/game_title.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-top: 1rem;
         @include forM(){
-            background-image: url(../images/black_page/game_title_M.png);
-            height: 9%;
             margin-bottom: 1rem;
+            overflow: hidden;
         }
     }
     .content{
@@ -631,7 +615,7 @@
         }
         .blockWrap{
             width: 60%;
-            padding-left: 1rem;
+            padding: 0 1rem;
             @include forM(){
                 width: 100%;
                 padding: 0;
@@ -641,7 +625,7 @@
     .block1{
         .subTitle{
             color: #c3d956;
-            font-size: 20px;
+            font-size: 24px;
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
@@ -650,7 +634,7 @@
         }
         .subContent{
             color: white;
-            font-size: 14px;
+            font-size: 16px;
             @include forM(){
                 font-size: 13px;
             }

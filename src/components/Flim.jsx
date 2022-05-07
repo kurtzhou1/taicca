@@ -1,12 +1,32 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles/page_black.scss';
 import flim_pie from './images/black_page/flim_pie.png';
+import title from './images/black_page/flim_title.png';
+import title_M from './images/black_page/flim_title_M.png';
 
 const Flim = () => {
+
+    const [isPc, setIsPc] = useState(false);
+    useEffect(()=>{
+        if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+        ) {
+            setIsPc(false);
+        }
+        else {
+            setIsPc(true);
+        }
+    })
     
     return (
         <div className="flim">
-            <div className='title'>
+            <div className='title' >
+                <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>
