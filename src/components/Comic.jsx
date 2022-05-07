@@ -1,16 +1,13 @@
-import React, { PureComponent } from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles/page_black.scss';
 import {
     ResponsiveContainer,
     ComposedChart,
     Line,
-    Area,
     Bar,
     XAxis,
     YAxis,
     CartesianGrid,
-    Tooltip,
-    Legend,
   } from 'recharts';
 // import {Button, Grid, Stack, Typography} from '@mui/material'
 
@@ -68,9 +65,49 @@ const Comic = () => {
             pv: 1,
         },
     ];
-    
+
+    const [showImage, setShowImage] = useState(false);
+
+    const getElementTop = (element) => {
+        let actualTop = element.offsetTop
+        let current = element.offsetParent
+        while (current !== null) {
+            actualTop += current.offsetTop
+            current = current.offsetParent
+        }
+        return actualTop
+    }
+
+    useEffect(() => {
+        //計算每個區塊
+        document.addEventListener('scroll', onScroll)
+        onScroll()
+        return () => {
+            document.removeEventListener('scroll', onScroll)
+        }
+    }, [])
+
+    const onScroll = () => {
+        let currentY = window.pageYOffset  //當前視窗距離天花板的高度
+        let targetDom =  document.getElementById("target");
+        let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
+        let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
+        console.log('currentY=>>', currentY);
+        console.log('start=>>', targetDomStart,'end=>>', targetDomEnd);
+        console.log( targetDomStart < currentY )
+        console.log( currentY < targetDomEnd )
+        console.log( targetDomStart < currentY && currentY < targetDomEnd  )
+
+        if( targetDomStart < currentY && currentY < targetDomEnd ) {
+            setShowImage(true);
+        } else {
+            setShowImage(false);
+        }
+       
+    }
+
     return (
-        <div className="comic">
+        <div className="comic" id="target">
             <div className='title'>
             </div>
             <div className='content'>
@@ -96,20 +133,13 @@ const Comic = () => {
                 </div>
                 <div className='comic_chart'>
                     <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
-                    
-                    <div className='chart'>
+                    <div className={`chart ${showImage ? 'showImage' : ''}`}>
                         <div>(單位:千部)</div>
                         <ResponsiveContainer>
                             <ComposedChart
                                 width={500}
                                 height={400}
                                 data={data}
-                                // margin={{
-                                // top: 20,
-                                // right: 20,
-                                // bottom: 20,
-                                // left: 20,
-                                // }}
                             >
                                 <CartesianGrid stroke="#f5f5f5" />
                                 <XAxis dataKey="name" scale="band" />

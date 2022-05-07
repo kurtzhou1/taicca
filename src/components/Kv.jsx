@@ -12,8 +12,8 @@ const Kv = () => {
                 <div className='subtitleIsPC'>探索文化內容新商模</div>
                 <div className='subtitleIsM'><div>探索</div><div>文化內容新商模</div></div>
             </div>
-            <div class="kv_img_left"></div>
-            <div class="kv_img_right"></div>
+            <div className="kv_img_left"></div>
+            <div className="kv_img_right"></div>
         </div>
     );
 }
