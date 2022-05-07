@@ -12,7 +12,9 @@
     padding-bottom: 1.5rem;
     >div{
         height: 100%;
-        width: 60%;
+        width: 1200px;
+        max-width: 100%;
+        padding: 0 20px;
         background-repeat: no-repeat;
         background-size: contain;
         @include forM(){
@@ -71,6 +73,7 @@
         margin: 1rem 0;
         @include forM(){
             margin: 0 0 1rem 0;
+            font-size: 18px;
         }
     }
     .content{
@@ -82,9 +85,9 @@
         position: absolute;
         z-index: 1;
         >div{
-            width: 65%;
-            margin: 0.5rem 0;
-            font-size: 14px;
+            width: 53%;
+            margin: 1rem 0;
+            font-size: 16px;
             @include forM(){
                 width: 100%;
             }
@@ -94,38 +97,40 @@
         position: absolute;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 30%;
+        height: 40%;
         @include forM(){
             height: 15%;
         }
     }
     .focusComic{
         top: 0;
-        left: 0;
+        left: 100px;
         background-image: url(../images/black_page/focus_comic.png);
         background-position: left;
         width: 30%;
         @include forM(){
             bottom: 0;
+            left: 0;
             top: initial;
             background-position: bottom;
         }
     }
     .focusGame{
         top: 1rem;
-        right: 0;
+        right: 50px;
         background-image: url(../images/black_page/focus_game.png);
         background-position: right;
         width: 30%;
         @include forM(){
             bottom: 1rem;
+            right: 0;
             top: initial;
             background-position: top;
         }
     }
     .focusFlim{
         bottom: 3rem;
-        left: 0;
+        left: 50px;
         background-image: url(../images/black_page/focus_flim.png);
         background-position: center;
         width: 25%;
@@ -137,7 +142,7 @@
     }
     .focusMusic{
         bottom: 0;
-        right: 0;
+        right: 50px;
         background-image: url(../images/black_page/focus_music.png);
         background-position: center;
         width: 25%;
@@ -160,7 +165,7 @@
     }
     .title{
         width: 100%;
-        height: 15%;
+        height: 17%;
         background-image: url(../images/black_page/comic_title.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -301,7 +306,7 @@
     }
     .title{
         width: 100%;
-        height: 15%;
+        height: 20%;
         background-image: url(../images/black_page/flim_title.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -449,7 +454,7 @@
     }
     .title{
         width: 100%;
-        height: 16%;
+        height: 21%;
         background-image: url(../images/black_page/music_title.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -603,7 +608,7 @@
     }
     .title{
         width: 100%;
-        height: 27%;
+        height: 29%;
         background-image: url(../images/black_page/game_title.png);
         background-size: cover;
         background-repeat: no-repeat;
