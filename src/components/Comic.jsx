@@ -1,8 +1,73 @@
-import React from 'react';
-import './styles/page_black.scss'
+import React, { PureComponent } from 'react';
+import './styles/page_black.scss';
+import {
+    ResponsiveContainer,
+    ComposedChart,
+    Line,
+    Area,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    Legend,
+  } from 'recharts';
 // import {Button, Grid, Stack, Typography} from '@mui/material'
 
 const Comic = () => {
+
+    const data = [
+        {
+          name: '11',
+          uv: 0.3,
+          pv: 0.5,
+        },
+        {
+          name: '12',
+          uv: 1,
+          pv: 0.4,
+        },
+        {
+          name: '13',
+          uv: 1.5,
+          pv: 0.6,
+        },
+        {
+          name: '14',
+          uv: 2.5,
+          pv: 0.8,
+        },
+        {
+          name: '15',
+          uv: 3.5,
+          pv: 1.3,
+        },
+        {
+          name: '16',
+          uv: 5,
+          pv: 2,
+        },
+        {
+            name: '17',
+            uv: 7,
+            pv: 1.4,
+        },
+        {
+            name: '18',
+            uv: 9,
+            pv: 1.3,
+        },
+        {
+            name: '19',
+            uv: 10,
+            pv: 1.5,
+        },
+        {
+            name: '20',
+            uv: 11,
+            pv: 1,
+        },
+    ];
     
     return (
         <div className="comic">
@@ -30,9 +95,34 @@ const Comic = () => {
                     </div>
                 </div>
                 <div className='comic_chart'>
+                    <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
+                    
                     <div className='chart'>
-                        圖
+                        <div>(單位:千部)</div>
+                        <ResponsiveContainer>
+                            <ComposedChart
+                                width={500}
+                                height={400}
+                                data={data}
+                                // margin={{
+                                // top: 20,
+                                // right: 20,
+                                // bottom: 20,
+                                // left: 20,
+                                // }}
+                            >
+                                <CartesianGrid stroke="#f5f5f5" />
+                                <XAxis dataKey="name" scale="band" />
+                                <YAxis />
+                                {/* <Tooltip /> */}
+                                {/* <Legend /> */}
+                                <Bar dataKey="pv" barSize={60} fill="#fff67f" />
+                                <Line type="monotone" dataKey="uv" stroke="#fff67f" />
+                            </ComposedChart>
+                        </ResponsiveContainer>
+                        <div>(單位:年份)</div>
                     </div>
+                
                     <div className='text'>
                         韓根據KOCCA的統計觀察，韓國網路漫畫新作品於2013年至2016年的產量，
                         從原本的382部增加到1,971部，短短三年內突增了1,589部，成長超過五倍。
