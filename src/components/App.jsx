@@ -27,32 +27,15 @@ const Containers = () => {
                 <div className='section_2_box'><Cross /></div>
                 {/* 產業研究(出版) */}
                 <div className='section_2_box'><Publish /></div>
-                
-                <div className='section_2_box'><Cross /></div>
-                <div className='page section2 gary tune4'>
-                    <div className='mask'>
-                        <Publish />
-                    </div>
-                </div>
                 {/* 產業研究(影視) */}
-                <div className='page section2 tune4'>
-                    <div className='mask'>
-                        <FilmSection2 />
-                    </div>
-                </div>
+                <div className='section_2_box'><FilmSection2 /></div>
                 {/* 產業研究(表演藝術) */}
-                <div className='page section2 gary tune5'>
-                    <div className='mask'>
-                        <Performance />
-                    </div>
-                </div>
+                <div className='section_2_box'><Performance /></div>
                 {/* 國際動態(影視) */}
-                <div className='page section2 tune6'><FilmSection3 /></div>
-                <div className='page section2 gary tune5'>
-                    <div className='mask'>
-                        <CrossSection3 />
-                    </div>
-                </div>
+                <div className='section_2_box'><FilmSection3 /></div>
+                {/* 國際動態(跨域) */}
+                <div className='section_2_box'><CrossSection3 /></div>
+              
             </div>
 
             {/* <section id="HOME"><Home/></section>

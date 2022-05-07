@@ -8,7 +8,7 @@
     .blockWrap{
         width: 1200px;
         max-width: 100%;
-        padding:0 15px;
+        padding:0 20px;
         margin: auto;
     }
     .block_title_h1{
@@ -79,6 +79,7 @@
 
 // 產業研究(跨域)
 .cross{
+    padding-bottom: 20px;
     .subContent_block{
         width: 100%;
         display: flex;
@@ -109,6 +110,7 @@
             width: 100%;
             display: flex;
             justify-content: flex-end;
+            padding-top: 15px;
         }
         @media screen and (max-width:990px){
             flex-wrap: wrap;
@@ -123,84 +125,155 @@
     }
 }
 
-.publish{}
+// 產業研究(出版)
+.publish{
+   background: #f3f3f3; 
+   padding: 60px 0;
+   .content_txt{
+       margin-bottom: 20px;
+   }
+   .data_img_box{
+       margin-bottom: 10px;
+       .title{
+        font-size: 16px;
+        margin-bottom: 10px;
+       }
+       img{
+           max-width: 100%;
+        margin-bottom: 15px;
+       }
+       span{
+        font-size: 14px;
+       }
+   }
+   .btn_box{
+        display: flex;
+        justify-content: flex-end;
+   }
+}
 
-
+// 產業研究(影視)
 .filmSection2{
-    background-image: url(../images/section2/filmSection2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    .blockWrap{
-        height: 100%;
+    padding: 60px 0;
+    .data_box{
+        margin:30px auto;
+        img{
+            width: 100%;
+        }
+    }
+    .btn_box{
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+// 產業研究(表演藝術)
+.performance{
+    padding: 40px 0;
+    background: #f3f3f3;
+    .content_block{
+        display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
-    .block1{
-        margin-top: 2rem;
-        .title{
-            font-size: 20px;
-            font-weight: bold;
+   .l_box{
+       display: inline-block;
+       width: calc(100% - 280px);
+   }
+   .r_box{
+        display: inline-block;
+        width: 250px;
+       img{
+           width: 100%;
+       }
+   }
+   @media screen and (max-width:768px){
+        .content_block{
+            align-items: flex-end;
         }
-        .content{
-            font-size: 15px;
-            font-weight: bold;
+        .l_box{
+            width: calc(70% - 20px);
         }
+        .r_box{
+            width: 30%;
+        }
+   }
+}
+
+ /* 國際動態(影視) */
+.filmSection3{
+    .block_title_h1{
+        margin-bottom: 40px;
     }
-    .block2{
+    .content_block{
         display: flex;
-        justify-content: end;
-        .button{
-            margin-top: 1rem;
-            width: 10%;
-            color: white;
-            background-color: black;
-            border-radius: 1px;
-            padding: 0.05rem 3rem;
-            font-family: sans-serif;
-            font-weight: bold;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        .l_box{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        .r_box{
+            width: calc(70% - 15px);
+            .btn_box{
+                width: 100%;
+                display: inline-flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        .l_box{
+            width: 120px;
+        }
+        .r_box{
+            width: calc(100% - 160px);
         }
     }
 }
 
-.performance{
-    background-image: url(../images/section2/performing.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    .blockWrap{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+/* 國際動態(影視) */
+.crossSection3Mask{
+    padding: 60px 0;
+    background: #f3f3f3;
+    .content_txt{
+        margin-bottom: 30px;
     }
-    .block1{
-        margin-top: 2.5rem;
-        width: 62%;
-        .title{
-            font-size: 20px;
-            font-weight: bold;
+    .annotation_block{
+        position: relative;
+        padding-left: 60px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #82b753;
+        margin-bottom: 20px;
+        &::before{
+            content: '';
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url('../images/section2/comma_img.png') center center no-repeat;
+            background-size: 100%;
         }
-        .content{
-            font-size: 15px;
-            font-weight: bold;
-        }
-        .button{
-            width: 10%;
-            color: white;
-            background-color: black;
-            border-radius: 1px;
-            padding: 0.05rem 3rem;
-            font-family: sans-serif;
-            font-weight: bold;
-        }
-        .block2{
-            display: flex;
-            justify-content: end;
-            margin-top: 1rem;
+    }
+    .btn_box{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width:768px){
+        .annotation_block{
+            padding-left: 40px;
+            &::before{
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
