@@ -18,14 +18,14 @@
         background-repeat: no-repeat;
         background-size: contain;
         @include forM(){
-            width: 80%;
+            width: 90%;
         }
     }
     &.focusPage {
         height: 90vh;
         padding-top: 3rem;
         @include forM(){
-            height: 110vh;
+            height: 130vh;
         }
     }
     &.comicPage {
@@ -84,6 +84,9 @@
         align-items: center;
         position: absolute;
         z-index: 1;
+        @include forM(){
+            position: initial;
+        }
         >div{
             width: 53%;
             margin: 1rem 0;
@@ -135,7 +138,8 @@
         background-position: center;
         width: 25%;
         @include forM(){
-            left: 25%;
+            bottom: 4rem;
+            left: 27%;
             background-position: top;
             width: 30%;
         }
@@ -147,7 +151,7 @@
         background-position: center;
         width: 25%;
         @include forM(){
-            right: 25%;
+            right: 26%;
             background-position: bottom;
             width: 30%;
         }
