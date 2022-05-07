@@ -277,3 +277,153 @@
         }
     }
 }
+
+/* 國際動態(音樂) */
+.music3{
+    padding: 60px 0;
+    .content_block{
+        .data_box{
+            display: flex;
+            align-items: flex-end;
+            padding: 30px 0;
+            .l_box{
+                width: 60%;
+            }
+            .r_box{
+                width: 40%;
+                .value{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    p{
+                        font-size: 90px;
+                        color: #8dc55d;
+                        line-height: 1;
+                        margin-right: 15px;
+                    }
+                    span{
+                        font-size: 28px;
+                        color: #8dc55d;   
+                    }
+                }
+                .txt{
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+                .btn_box{
+                    display: flex;
+                    justify-content: flex-end ;
+                }
+            }
+        }
+    }
+
+    .btm_block{
+        display: flex;
+        justify-content: space-between;
+        .l_box{
+            width: calc(50% - 10px);
+            .btn_box{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .r_box{
+            width: calc(50% - 10px);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        .content_block{
+            .data_box{
+                flex-wrap: wrap;
+                .l_box{
+                    width: 100%;
+                }
+                .r_box{
+                    width: 100%;
+                }
+            }
+            .btm_block{
+                flex-wrap: wrap;
+                .l_box{
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                .r_box{
+                    width: 100%; 
+                }
+            }
+        }
+    }
+
+
+}
+
+/* 國際動態(視覺藝術) */
+.visualArt3{
+    background: #f3f3f3;
+    padding: 60px 0;
+    .data_block{
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        .l_box{
+            width: calc(50% - 10px);
+        }
+        .r_box{
+            width: calc(50% - 10px);
+            .list_box{
+                .list{
+                    display: inline-flex;
+                    align-items: center;
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #9c9c9c;
+                    padding-left: 10px;
+                    width: 100%;
+                    span{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: #8dc55c;
+                        margin-right: 10px;
+                        &.lv01{background-color: #8dc55c;}
+                        &.lv02{background-color: #a7d17d;}
+                        &.lv03{background-color: #a7d17d;}
+                        &.lv04{background-color: #d6e8c2;}
+                        &.lv05{background-color: #e1edd1;}
+                    }
+                    p{
+                        width: calc(100% - 50px);
+                        font-size: 14px;
+                    }
+                }
+            }
+            .unit{
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            .btn_box{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    @media screen and (max-width:990px){
+        .data_block{
+            flex-wrap: wrap;
+            .l_box{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .r_box{
+                width: 100%;
+            }
+        }
+    }
+}

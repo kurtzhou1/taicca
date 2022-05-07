@@ -11,6 +11,9 @@ import FilmSection2 from './FilmSection2';
 import Performance from './Performance';
 import FilmSection3 from './FilmSection3';
 import CrossSection3 from './CrossSection3';
+import Music3 from './Ｍusic3'
+import VisualArt3 from './VisualArt3'
+import MarketIntelligence from './MarketIntelligence'
 
 const Containers = () => {
 
@@ -35,7 +38,15 @@ const Containers = () => {
                 <div className='section_2_box'><FilmSection3 /></div>
                 {/* 國際動態(跨域) */}
                 <div className='section_2_box'><CrossSection3 /></div>
-              
+                {/* 國際動態(音樂) */}
+                <div className='section_2_box'><Music3 /></div>
+                {/* 國際動態(視覺藝術) */}
+                <div className='section_2_box'><VisualArt3 /></div>
+            </div>
+
+            <div className="section_3_block">
+                {/* 情商掃描 */}
+                <div className='section_3_box'><MarketIntelligence /></div>
             </div>
 
             {/* <section id="HOME"><Home/></section>

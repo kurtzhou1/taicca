@@ -1,8 +1,52 @@
-/**start**/
 
-.filmSection3{
-
+.section_3_block{
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .content_block{
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .block_title_h1{
+        padding: 0 20px;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
 }
 
-.crossSection3Mask{
+
+
+.marketIntelligence{
+    position: relative;
+    background: url('../images/section2/section03-bg.png') left center repeat;
+    min-height: 100vh;
+
+    .footerBGl{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: auto;
+        max-height: 400px;
+        max-width: 48%;
+    }
+    .footerBGr{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        max-height: 400px;
+        max-width: 48%;
+    }
+    .footerLogo{
+        position: absolute;
+        max-width: 50%;
+        width: auto;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
