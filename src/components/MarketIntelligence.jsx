@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './styles/section3.scss'
 import titleH1 from '../components/images/section2/s3_h1.png'
-import footerBg from '../components/images/section2/s3_btm_img.png'
+// import footerBg from '../components/images/section2/s3_btm_img.png'
 import footerBgl from '../components/images/section2/footer_left.png'
 import footerBgr from '../components/images/section2/footer_right.png'
 import footerLogo from '../components/images/section2/footer_logo.png'

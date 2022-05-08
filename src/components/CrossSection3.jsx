@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/section3.scss'
 import titleH2 from '../components/images/section2/s3_b2_t.png'
-import commaIMG from '../components/images/section2/comma_img.png'
+// import commaIMG from '../components/images/section2/comma_img.png'
 
 const CrossSection3 = () => {
     

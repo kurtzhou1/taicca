@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import './styles/section2.scss'
 import titleH2 from '../components/images/section2/s3_b4_t.png'
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
-import { convertLength } from '@mui/material/styles/cssUtils';
+// import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+// import { convertLength } from '@mui/material/styles/cssUtils';
 
 const VisualArt3 = () => {
 
@@ -78,10 +79,10 @@ const VisualArt3 = () => {
         const onScroll = () => {
             let currentY = window.pageYOffset  //當前視窗距離天花板的高度
             let targetDom =  document.getElementById("target_pie");
-            let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
+            // let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
             let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
             let startNumber = isPc ? 200 : 700 
-            let endNumber = isPc ? 300 : 500
+            // let endNumber = isPc ? 300 : 500
             
             if( targetDomStart  <= currentY+startNumber ) {
                 setShowImage(true);

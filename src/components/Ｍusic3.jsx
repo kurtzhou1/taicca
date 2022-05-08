@@ -1,9 +1,9 @@
-import React,{PureComponent,useEffect,useState} from 'react';
+import React,{useEffect,useState} from 'react';
 import './styles/section3.scss'
 import titleH2 from '../components/images/section2/s3_b3_t.png'
 import IMG from '../components/images/section2/img_music.png'
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 const Music3 = () => {
@@ -101,10 +101,10 @@ const Music3 = () => {
       const onScroll = () => {
           let currentY = window.pageYOffset  //當前視窗距離天花板的高度
           let targetDom =  document.getElementById("target_bar");
-          let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
+        //   let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
           let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
           let startNumber = isPc ? 300 : 300 
-          let endNumber = isPc ? 300 : 500
+        //   let endNumber = isPc ? 300 : 500
           
           if( targetDomStart  <= currentY+startNumber ) {
               setShowImage(true);
