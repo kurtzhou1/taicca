@@ -116,16 +116,16 @@ const Comic = () => {
         let startNumber = isPc ? 200 : 900 
         let endNumber = isPc ? 300 : 700
         console.log((targetDomStart + startNumber) < currentY , currentY < (targetDomEnd + endNumber));
-        if( (targetDomStart + startNumber) < currentY && currentY < (targetDomEnd + endNumber) ) {
+        if( targetDomStart  <= currentY+startNumber) {
             setShowImage(true);
         } else {
-            setShowImage(false);
+            // setShowImage(false);
         }
        
     }
 
     return (
-        <div className="comic" id="target">
+        <div className="comic">
             <div className='title' >
                 <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
@@ -150,7 +150,7 @@ const Comic = () => {
                         <img src={comic_comic}  width='100%' />
                     </div>
                 </div>
-                <div className='comic_chart'>
+                <div className='comic_chart' id="target">
                     <div>
                         <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
                         <div>(單位:千部)</div>
