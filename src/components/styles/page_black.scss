@@ -207,6 +207,7 @@
                 height: 50%;
                 height: 480px;
                 margin-left: 0;
+                font-size: 12px;
             }
             .text{
                 font-size: 14px;
@@ -215,6 +216,9 @@
                 margin-bottom: 1rem;
                 .yellow{
                     color: #fff67f;
+                }
+                @include forM(){
+                    font-size: 12px;
                 }
             }
             .chart{
@@ -237,6 +241,21 @@
                         top: 50%;
                         font-size: 20px;
                         font-weight: bold;
+                    }
+                }
+                .numberWrap{
+                    color: #09361B;
+                    position: absolute;
+                    z-index: 1;
+                    left: 40.5%;
+                    display: flex;
+                    width: 23%;
+                    justify-content: space-between;
+                    bottom: 8%;
+                    @include forM(){
+                        font-size: 12px;
+                        left: 35%;
+                        width: 30.5%;
                     }
                 }
             }

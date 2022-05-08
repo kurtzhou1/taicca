@@ -93,38 +93,31 @@
         }
     }
     .kv_img_left{
-        background-image: url(../images/kv/kv_img_left.png);
-        background-repeat: no-repeat;
-        width: 41%;
-        height: 110%;
         position: absolute;
-        top: 104px;
-        left: -6rem;
-        background-size: cover;
+        left: -6.3rem;
         @include forM(){
-            background-image: url(../images/kv/kv_img_left_M.png);
-            bottom: -7rem;
-            top: initial;
-            left: -11rem;
-            width: 130%;
-            height: 68%;
+            left: -8.3rem;
+            bottom: -6.5rem;
         }
     }
     .kv_img_right{
-        background-image: url(../images/kv/kv_img_right.png);
-        background-repeat: no-repeat;
-        width: 40%;
-        height: 120%;
         position: absolute;
-        // top: -150px;
-        bottom: 0rem;
-        right: 0px;
-        background-size: cover;
+        right: -12%;
+        bottom: 0;
+        height: 115%;
+        z-index: -1;
+        // background-image: url(../images/kv/kv_img_right.png);
+        // background-repeat: no-repeat;
+        // height: 120%;
+        // position: absolute;
+        // // top: -150px;
+        // bottom: 0rem;
+        // right: 0px;
+        // background-size: cover;
         @include forM(){
-            width: 78%;
             height: 40%;
-            top: -3.5rem;
-            right: -4.5rem;
+            top: -4rem;
+            right: -5rem;
         }
     }
 }

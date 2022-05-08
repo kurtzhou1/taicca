@@ -163,15 +163,18 @@ const Comic = () => {
                                 height={400}
                                 data={data}
                             >
-                                <CartesianGrid stroke="#fff67f" vertical={false} />
+                                {/* <CartesianGrid stroke="#fff67f" vertical={false} /> */}
+                                <CartesianGrid stroke="#fff67f" />
                                 <XAxis dataKey="name" scale="band" stroke="#fff67f" />
                                 <YAxis stroke="#fff67f" />
-                                {/* <Tooltip /> */}
-                                {/* <Legend /> */}
                                 <Bar dataKey="pv" barSize={200} fill="#fff67f" />
                                 <Line type="monotone" dataKey="uv" stroke="#fff67f" />
                             </ComposedChart>
                         </ResponsiveContainer>
+                        <div className='numberWrap'>
+                            <div>382</div>
+                            <div>1971</div>
+                        </div>
                     </div>
                     <div className='text'>
                         <div className='yellow'>(單位:年份)</div>
