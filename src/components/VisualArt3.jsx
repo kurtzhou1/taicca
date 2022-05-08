@@ -1,8 +1,93 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './styles/section2.scss'
 import titleH2 from '../components/images/section2/s3_b4_t.png'
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { convertLength } from '@mui/material/styles/cssUtils';
 
 const VisualArt3 = () => {
+
+    const data = [
+        { name: '運輸', value: 30 },
+        { name: '建築物', value: 20 },
+        { name: '商務差旅', value: 21 },
+        { name: '出版', value: 7 },
+        { name: '其他', value: 22 },
+      ];
+      
+      const COLORS = ['#8dc55d', '#d6e8c2', '#a7d17d', '#a7d17d'];
+      
+      const RADIAN = Math.PI / 180;
+
+      const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index,name }) => {
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const x = cx + radius * Math.cos(-midAngle * RADIAN);
+        const y = cy + radius * Math.sin(-midAngle * RADIAN);
+      
+        return (
+            <>
+                <text className='pie_name' x={x} y={y-24} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+                    {name}
+                </text>
+                <text className='pie_data' x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+                    {`${(percent * 100).toFixed(0)}%`}
+                </text>
+            </>
+
+        );
+      };
+
+        const [showImage, setShowImage] = useState(false);
+        const [isPc, setIsPc] = useState(false);
+        useEffect(()=>{
+            if (navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                setIsPc(false);
+            }
+            else {
+                setIsPc(true);
+            }
+        })
+
+        const getElementTop = (element) => {
+            let actualTop = element.offsetTop
+            let current = element.offsetParent
+            while (current !== null) {
+                actualTop += current.offsetTop
+                current = current.offsetParent
+            }
+            return actualTop
+        }
+
+    
+    
+        useEffect(() => {
+            //計算每個區塊
+            document.addEventListener('scroll', onScroll)
+            onScroll()
+            return () => {
+                document.removeEventListener('scroll', onScroll)
+            }
+        }, [])
+
+        const onScroll = () => {
+            let currentY = window.pageYOffset  //當前視窗距離天花板的高度
+            let targetDom =  document.getElementById("target_pie");
+            let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
+            let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
+            let startNumber = isPc ? 200 : 700 
+            let endNumber = isPc ? 300 : 500
+            
+            if( targetDomStart  <= currentY+startNumber ) {
+                setShowImage(true);
+            } 
+        }
+
     
     return (
         <div className="visualArt3">
@@ -18,8 +103,28 @@ const VisualArt3 = () => {
                     <div className="data_block">
                         <div className="l_box">
                             <p className='content_txt'>佳士得2019年碳排放量分布─</p>
-                            <div className="pieChart">
+                            <div className="pieChart" id="target_pie">
                                 {/* 圓餅圖 */}
+                                {
+                                    showImage && <ResponsiveContainer width="100%" height="100%">
+                                    <PieChart width={10} height={10}>
+                                        <Pie
+                                            data={data}
+                                            cx="50%"
+                                            cy="50%"
+                                            labelLine={false}
+                                            label={renderCustomizedLabel}
+                                            // outerRadius={80}
+                                            fill="#8884d8"
+                                            dataKey="value"
+                                        >
+                                            {data.map((entry, index) => (
+                                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                            ))}
+                                        </Pie>
+                                    </PieChart>
+                                </ResponsiveContainer>
+                                }
                             </div>
                         </div>
                         <div className="r_box">

@@ -1,4 +1,4 @@
-import React,{PureComponent} from 'react';
+import React,{PureComponent,useEffect,useState} from 'react';
 import './styles/section3.scss'
 import titleH2 from '../components/images/section2/s3_b3_t.png'
 import IMG from '../components/images/section2/img_music.png'
@@ -58,6 +58,58 @@ const Music3 = () => {
             pv: 2.3,
           },
       ];
+
+      const [showImage, setShowImage] = useState(false);
+      const [isPc, setIsPc] = useState(false);
+      useEffect(()=>{
+          if (navigator.userAgent.match(/Android/i)
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/iPhone/i)
+          || navigator.userAgent.match(/iPad/i)
+          || navigator.userAgent.match(/iPod/i)
+          || navigator.userAgent.match(/BlackBerry/i)
+          || navigator.userAgent.match(/Windows Phone/i)
+          ) {
+              setIsPc(false);
+          }
+          else {
+              setIsPc(true);
+          }
+      })
+
+      const getElementTop = (element) => {
+          let actualTop = element.offsetTop
+          let current = element.offsetParent
+          while (current !== null) {
+              actualTop += current.offsetTop
+              current = current.offsetParent
+          }
+          return actualTop
+      }
+
+  
+  
+      useEffect(() => {
+          //計算每個區塊
+          document.addEventListener('scroll', onScroll)
+          onScroll()
+          return () => {
+              document.removeEventListener('scroll', onScroll)
+          }
+      }, [])
+
+      const onScroll = () => {
+          let currentY = window.pageYOffset  //當前視窗距離天花板的高度
+          let targetDom =  document.getElementById("target_bar");
+          let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
+          let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
+          let startNumber = isPc ? 300 : 300 
+          let endNumber = isPc ? 300 : 500
+          
+          if( targetDomStart  <= currentY+startNumber ) {
+              setShowImage(true);
+          } 
+      }
     
     return (
         <div className="music3">
@@ -74,27 +126,32 @@ const Music3 = () => {
                         臺灣中小規模音樂藝人及團體在日本社群討論聲量占比（％）
                     </div>
                     <div className="data_box">
-                        <div className="l_box">
+                        <div className="l_box" id="target_bar">
                             {/* 圖表 */}
-                            <ResponsiveContainer width="100%" height="100%">
-                                <BarChart
-                                width={500}
-                                height={300}
-                                data={data}
-                                margin={{
-                                    top: 5,
-                                    right: 30,
-                                    left: 20,
-                                    bottom: 5,
-                                }}
-                                barSize={20}
-                                >
-                                <XAxis dataKey="name" scale="point" padding={{ left: 0, right: 0 }} />
-                                <Tooltip />
-                                <CartesianGrid strokeDasharray="3 3" />
-                                <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
-                                </BarChart>
-                            </ResponsiveContainer>
+                            {
+                                showImage && <>
+                                    <ResponsiveContainer width="100%" height="100%">
+                                        <BarChart
+                                        width={500}
+                                        height={300}
+                                        data={data}
+                                        margin={{
+                                            top: 5,
+                                            right: 30,
+                                            left: 20,
+                                            bottom: 5,
+                                        }}
+                                        barSize={20}
+                                        >
+                                        <XAxis dataKey="name" scale="point" padding={{ left: 0, right: 0 }} />
+                                        <Tooltip />
+                                        <CartesianGrid strokeDasharray="3 3" />
+                                        <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
+                                        </BarChart>
+                                    </ResponsiveContainer>
+                                </>
+                            }
+
                         </div>
                         <div className="r_box">
                             <div className="value">
