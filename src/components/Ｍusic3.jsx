@@ -162,9 +162,9 @@ const Music3 = () => {
                                 文策院2021年調查了2020年9月初至2021年9月底臺灣音樂藝人團體在日本網路討論聲量，發現有96%的聲量來自社群媒體Twitter。
                             </p>
                             <div className="btn_box">
-                                <div className="more_btn">
+                                <a className="more_btn" href='./02_internation03.html'>
                                     MORE+
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -177,9 +177,9 @@ const Music3 = () => {
                                 在去年底的COP26簽訂格拉斯哥氣候協定後，2050年淨零排放（Net zero）已是全球氣候行動的共識。而音樂產業也不例外，全球三大音樂唱片公司，環球、華納、Sony以及部分廠牌也回應簽署音樂氣候協定，目標2030年減碳50% 、2050年淨零排放1 。
                             </div>
                             <div className="btn_box">
-                                <div className="more_btn">
+                                <a className="more_btn" href='./02_tw05.html'>
                                     MORE+
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div className="r_box">

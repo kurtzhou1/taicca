@@ -25,9 +25,9 @@ const CrossSection3 = () => {
                             吳明益在2021年4月推出日譯本《複眼人》當日累積近450則聲量，此外，《天橋上的魔術師》和《單車失竊記》也都具有討論聲量，顯示出在日本出版市場具有讀者群關注的現象。而李琴峰則在2021年7月獲得芥川賞時，達到單日聲量突破12,000的高峰。
                         </div>
                         <div className="btn_box">
-                            <div className="more_btn">
+                            <a className="more_btn" href='./02_internation02.html'>
                                  MORE+
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

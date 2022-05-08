@@ -20,9 +20,9 @@ const Performance = () => {
                             條件，想要經營這一行的業主有什麼選擇？
                         </div>
                         <div className="btn_box">
-                            <div className="more_btn">
+                            <a className="more_btn" href='./02_tw04.html'>
                                 MORE+
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div className="r_box">

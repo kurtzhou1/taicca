@@ -13,6 +13,7 @@ import {
 import title from './images/black_page/comic_title.png';
 import title_M from './images/black_page/comic_title_M.png';
 import comic_comic from './images/black_page/comic_comic.png';
+// import comic_more from './more/01_comic.html';
 
 const Comic = () => {
 
@@ -111,23 +112,23 @@ const Comic = () => {
     const onScroll = () => {
         let currentY = window.pageYOffset  //當前視窗距離天花板的高度
         let targetDom =  document.getElementById("target");
-        let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
+        // let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
         let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
-        let startNumber = isPc ? 200 : 900 
-        let endNumber = isPc ? 300 : 700
-        console.log((targetDomStart + startNumber) < currentY , currentY < (targetDomEnd + endNumber));
+        let startNumber = isPc ? 400 : 900 
+        // let endNumber = isPc ? 300 : 700
         if( targetDomStart  <= currentY+startNumber) {
             setShowImage(true);
-        } else {
+        } 
+        // else {
             // setShowImage(false);
-        }
+        // }
        
     }
 
     return (
         <div className="comic">
             <div className='title' >
-                <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
+                <img alt="" src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>
@@ -144,10 +145,10 @@ const Comic = () => {
                         </div>
                     </div>
                     <div className="block2">
-                        <div className="button">MORE+</div>
+                        <a className="button" href="./01_comic.html">MORE+</a>
                     </div>
                     <div className='block3'>
-                        <img src={comic_comic}  width='100%' />
+                        <img alt="" src={comic_comic}  width='100%' />
                     </div>
                 </div>
                 <div className='comic_chart' id="target">

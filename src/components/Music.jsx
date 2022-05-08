@@ -26,7 +26,7 @@ const Music = () => {
     return (
         <div className="music">
             <div className='title' >
-                <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
+                <img alt="" src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>
@@ -43,7 +43,7 @@ const Music = () => {
                         </div>
                     </div>
                     <div className="block2">
-                        <div className="button">MORE+</div>
+                        <a className="button" href="./01_music.html">MORE+</a>
                     </div>
                     <div className='block3'>
                         <div className='img'>
@@ -51,7 +51,7 @@ const Music = () => {
                     </div>
                 </div>
                 <div className='music_jay'>
-                    <img src={music_jay} />
+                    <img alt="" src={music_jay} />
                     <div className='black1' />
                     <div className='text'>
                         周杰倫潮牌「PHANTACi」與Ezek平臺聯名推出的「Phanta Bear」NFT，不僅在NFT市場刷新

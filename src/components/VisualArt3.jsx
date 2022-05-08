@@ -154,9 +154,9 @@ const VisualArt3 = () => {
                                 單位：tonnes CO2e
                             </p>
                             <div className="btn_box">
-                                <div className="more_btn">
+                                <a className="more_btn" href='./02_internation04.html'>
                                     MORE+
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

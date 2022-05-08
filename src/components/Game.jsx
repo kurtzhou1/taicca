@@ -26,7 +26,7 @@ const Game = () => {
     return (
         <div className="game">
             <div className='title' >
-                <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
+                <img alt="" src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>
@@ -44,12 +44,12 @@ const Game = () => {
                         </div>
                     </div>
                     <div className="block2">
-                        <div className="button">MORE+</div>
+                        <a className="button" href="./01_game.html">MORE+</a>
                     </div>
                 </div>
             </div>
             <div className='game_man_box'>
-                <img src={game_man} className="game_man" />
+                <img alt="" src={game_man} className="game_man" />
             </div>
         </div>
     );

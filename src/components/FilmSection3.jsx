@@ -26,9 +26,9 @@ const FilmSection3 = () => {
                             未來的影視製作，將不再是傳統的出資委託與製作的甲、乙方關係，而是需要多方溝通的多元募資模式。
                         </div>
                         <div className="btn_box">
-                            <div className="more_btn">
+                            <a className="more_btn" href='./02_internation01.html'>
                                  MORE+
-                            </div>
+                            </a>
                         </div>
                     </div>
 

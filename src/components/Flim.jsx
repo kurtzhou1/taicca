@@ -27,7 +27,7 @@ const Flim = () => {
     return (
         <div className="flim">
             <div className='title' >
-                <img src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
+                <img alt="" src={isPc ? title : title_M} width={isPc ? 'auto' : '450'} />
             </div>
             <div className='content'>
                 <div className='blockWrap'>
@@ -43,12 +43,12 @@ const Flim = () => {
                         </div>
                     </div>
                     <div className="block2">
-                        <div className="button">MORE+</div>
+                        <a className="button" href="./01_flim.html">MORE+</a>
                     </div>
                     <div className='block3'>
                         <div className='imgWrap'>
                             {/* <div className='img' /> */}
-                            <img src={flim_talk} />
+                            <img alt="" src={flim_talk} />
                             <div className="text">
                                     <div className='black1' />
                                     <div className='black_text'>
@@ -64,7 +64,7 @@ const Flim = () => {
                 </div>
                 <div className='flim_pie'>
                     <div className='text'>韓國政府對OTT產業之政策關鍵角色關係———</div>
-                    <img src={flim_pie}/>
+                    <img alt="" src={flim_pie}/>
                 </div>
             </div>
         </div>
