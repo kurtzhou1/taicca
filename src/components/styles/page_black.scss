@@ -95,6 +95,7 @@
             font-size: 16px;
             @include forM(){
                 width: 100%;
+                font-size: 14px;
             }
         }
     }
@@ -170,9 +171,6 @@
     position: relative;
     padding: 2rem 1.5rem 1.5rem;
     box-sizing: border-box;
-    @include forM(){
-        font-size: 15px;
-    }
     .title{
         margin-top: 1rem;
         @include forM(){
@@ -199,7 +197,8 @@
         .comic_chart{
             width: 40%;
             color: #fff67f;
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: bold;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -207,17 +206,13 @@
                 width: 100%;
                 height: 50%;
                 height: 480px;
-                // margin-top: 1rem;
                 margin-left: 0;
             }
             .text{
-                font-size: 12px;
+                font-size: 14px;
                 color: white;
                 font-weight: bold;
                 margin-bottom: 1rem;
-                // @include forM(){
-                //     margin-bottom: 0rem;
-                // }
                 .yellow{
                     color: #fff67f;
                 }
@@ -225,7 +220,7 @@
             .chart{
                 width: 42%;
                 height: 75%;
-                margin-top: 5%;
+                margin-top: 4%;
                 position: absolute;
                 right: 0;
                 display: none;
@@ -254,14 +249,14 @@
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
-                font-size: 15px;
+                font-size: 18px;
             }
         }
         .subContent{
             color: white;
             font-size: 16px;
             @include forM(){
-                font-size: 13px;
+                font-size: 14px;
             }
         }
     }
@@ -276,10 +271,15 @@
             width: auto;
             color: #09361B;
             background-color: #fff67f;
-            border-radius: 1px;
-            padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            border-radius: 2px;
+            padding: 0.2rem 3rem;
+            &:hover{
+                background-color: black;
+                color: #fff67f;
+                cursor: pointer;
+            }
             @include forM(){
                 padding: 0.1rem 1rem;
             }
@@ -309,7 +309,7 @@
     padding: 2rem 1.5rem 1.5rem;
     box-sizing: border-box;
     @include forM(){
-        font-size: 15px;
+        font-size: 18px;
     }
     .title{
         margin-top: 1rem;
@@ -362,15 +362,12 @@
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
-                font-size: 15px;
+                font-size: 18px;
             }
         }
         .subContent{
             color: white;
             font-size: 16px;
-            @include forM(){
-                font-size: 13px;
-            }
         }
     }
     .block2{
@@ -384,10 +381,15 @@
             width: auto;
             color: #ea5550;
             background-color: #1d2088;
-            border-radius: 1px;
-            padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            border-radius: 2px;
+            padding: 0.2rem 3rem;
+            &:hover{
+                background-color: black;
+                color: #ea5550;
+                cursor: pointer;
+            }
             @include forM(){
                 padding: 0.1rem 1rem;
             }
@@ -416,13 +418,13 @@
         .text{
             width: 60%;
             height: 95%;
-            font-size: 13px;
+            font-size: 16px;
             color: white;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             @include forM(){
-                font-size: 12px;
+                font-size: 14px;
                 width: 65%;
                 height: 100%;
             }
@@ -453,7 +455,7 @@
     padding: 2rem 1.5rem 1.5rem;
     box-sizing: border-box;
     @include forM(){
-        font-size: 15px;
+        font-size: 18px;
     }
     .title{
         margin-top: 1rem;
@@ -499,7 +501,7 @@
                 background-position: center;
             }
             .text{
-                font-size: 14px;
+                font-size: 16px;
                 color: white;
                 margin: 1rem 0.5rem;
                 @include forM(){
@@ -529,15 +531,15 @@
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
-                font-size: 15px;
+                font-size: 18px;
             }
         }
         .subContent{
             color: white;
             font-size: 16px;
-            @include forM(){
-                font-size: 13px;
-            }
+            // @include forM(){
+            //     font-size: 13px;
+            // }
         }
     }
     .block2{
@@ -551,10 +553,15 @@
             width: auto;
             color: #ffc000;
             background-color: #796baf;
-            border-radius: 1px;
-            padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            border-radius: 2px;
+            padding: 0.2rem 3rem;
+            &:hover{
+                background-color: black;
+                color: #796baf;
+                cursor: pointer;
+            }
             @include forM(){
                 padding: 0.1rem 1rem;
             }
@@ -581,7 +588,7 @@
             }
             .text{
                 width: 70%;
-                font-size: 13px;
+                font-size: 16px;
                 color: white;
                 padding-left: 28%;
                 padding-top: 10%;
@@ -635,15 +642,15 @@
             margin-bottom: 0.5rem;
             font-weight: bold;
             @include forM(){
-                font-size: 15px;
+                font-size: 18px;
             }
         }
         .subContent{
             color: white;
             font-size: 16px;
-            @include forM(){
-                font-size: 13px;
-            }
+            // @include forM(){
+            //     font-size: 13px;
+            // }
         }
     }
     .block2{
@@ -657,10 +664,15 @@
             width: auto;
             color: #3a499d;
             background-color: #c3d956;
-            border-radius: 1px;
-            padding: 0.05rem 3rem;
             font-family: sans-serif;
             font-weight: bold;
+            border-radius: 2px;
+            padding: 0.2rem 3rem;
+            &:hover{
+                background-color: black;
+                color: #c3d956;
+                cursor: pointer;
+            }
             @include forM(){
                 padding: 0.1rem 1rem;
             }

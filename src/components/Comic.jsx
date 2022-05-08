@@ -113,9 +113,10 @@ const Comic = () => {
         let targetDom =  document.getElementById("target");
         let targetDomEnd = getElementTop(targetDom); //元素底部距離天花板的高度
         let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
-        let startNumber = isPc ? 200 : 700 
-        let endNumber = isPc ? 300 : 500
-        if( targetDomStart + startNumber < currentY && currentY < targetDomEnd + endNumber ) {
+        let startNumber = isPc ? 200 : 900 
+        let endNumber = isPc ? 300 : 700
+        console.log((targetDomStart + startNumber) < currentY , currentY < (targetDomEnd + endNumber));
+        if( (targetDomStart + startNumber) < currentY && currentY < (targetDomEnd + endNumber) ) {
             setShowImage(true);
         } else {
             setShowImage(false);
