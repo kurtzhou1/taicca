@@ -16,7 +16,7 @@ const Cross = () => {
                     <div className="block1">
                         <div className="block_title_h2">
                             <img src={titleH2} alt="" />
-                            <p>2021年台灣文化內容消費趨勢管窺────參與比率、付費比率</p>
+                            <p>2021年台灣文化內容消費趨勢管窺───參與比率、付費比率</p>
                         </div>
                         <div className="content_txt">
                             受到疫情影響，2021年台灣民眾文化內容的消費，雖然線上參與比率提高，但是在參與比率、

@@ -11,7 +11,7 @@ const Publish = () => {
                 <div className="content_block">
                     <div className="block_title_h2">
                         <img src={title} alt="" />
-                        <p>找尋每一塊拼圖——————友善書業合作社進銷存數據之探勘</p>
+                        <p>找尋每一塊拼圖———友善書業合作社進銷存數據之探勘</p>
                     </div>
                     <div className="content_txt">
                         文策院為完整出版通路產業的全貌，堆疊產業整體輪廓，在2021年
