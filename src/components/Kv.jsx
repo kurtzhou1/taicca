@@ -21,7 +21,7 @@ const Kv = () => {
         else {
             setIsPc(true);
         }
-    })
+    }, [navigator.userAgent])
     
     return (
         <div className="kv">
@@ -32,10 +32,10 @@ const Kv = () => {
                 <div className='subtitleIsPC'>探索文化內容新商模</div>
                 <div className='subtitleIsM'><div>探索</div><div>文化內容新商模</div></div>
             </div>
-            {isPc ? <img src={kv_img_left}  width="42%" className="kv_img_left" /> :
-            <img alt="" src={kv_img_left_M}  width="400" className="kv_img_left" />
+            {isPc ? <img alt="" src={kv_img_left} className="kv_img_left" /> :
+            <img alt="" src={kv_img_left_M} className="kv_img_left" />
             }
-            <img alt="" src={kv_img_right}  width={isPc ? "52%" : "300"} height="auto" className="kv_img_right" />
+            <img alt="" src={kv_img_right} className="kv_img_right" />
         </div>
     );
 }

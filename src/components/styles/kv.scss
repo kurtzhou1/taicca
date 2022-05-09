@@ -95,9 +95,12 @@
     .kv_img_left{
         position: absolute;
         left: -6.3rem;
+        width: 42%;
+        height: auto;
         @include forM(){
             left: -8.3rem;
-            bottom: -6.5rem;
+            bottom: -6.1rem;
+            width: 100%;
         }
     }
     .kv_img_right{
@@ -105,6 +108,8 @@
         right: -13%;
         bottom: 0;
         z-index: -1;
+        width: 52%;
+        height: auto;
         // background-image: url(../images/kv/kv_img_right.png);
         // background-repeat: no-repeat;
         // height: 120%;
@@ -114,7 +119,7 @@
         // right: 0px;
         // background-size: cover;
         @include forM(){
-            height: 40%;
+            width: 75%;
             top: -4rem;
             right: -5rem;
         }
