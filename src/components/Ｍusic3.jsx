@@ -108,6 +108,17 @@ const Music3 = () => {
               setShowImage(true);
           } 
       }
+
+    const CustomTooltip = ({ active, payload, label }) => {
+        if (active && payload && payload.length) {
+            console.log(active, payload, label)
+            return (
+            <div className="custom-tooltip">
+                <p className="label">{`${label} : ${payload[0].value}`}</p>
+            </div>
+            );
+        }
+    }
     
     return (
         <div className="music3">
@@ -142,7 +153,7 @@ const Music3 = () => {
                                         barSize={20}
                                         >
                                         <XAxis dataKey="name" scale="point" interval={0} angle={30} padding={{ left: 0, right: 0 }} />
-                                        <Tooltip />
+                                        <Tooltip content={<CustomTooltip />} />
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
                                         </BarChart>
