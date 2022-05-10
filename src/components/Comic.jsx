@@ -116,7 +116,7 @@ const Comic = () => {
         let targetDomStart = getElementTop(targetDom) - targetDom.offsetHeight; //元素上層距離天花板的高度
         let startNumber = isPc ? 400 : 900 
         // let endNumber = isPc ? 300 : 700
-        if( targetDomStart  <= currentY+startNumber) {
+        if( targetDomStart  <= currentY+150) {
             setShowImage(true);
         } 
         // else {
@@ -168,7 +168,7 @@ const Comic = () => {
                                 <CartesianGrid stroke="#fff67f" />
                                 <XAxis dataKey="name" scale="band" stroke="#fff67f" />
                                 <YAxis stroke="#fff67f" />
-                                <Bar dataKey="pv" barSize={200} fill="#fff67f" />
+                                <Bar dataKey="pv" barSize={200} fill="#fff67f" animationDuration={5000}/>
                                 <Line type="monotone" dataKey="uv" stroke="#fff67f" />
                             </ComposedChart>
                         </ResponsiveContainer>
@@ -177,7 +177,7 @@ const Comic = () => {
                             <div>1971</div>
                         </div>
                     </div>
-                    <div className='text'>
+                    <div className='text' >
                         <div className='yellow'>(單位:年份)</div>
                         <div>
                             韓根據KOCCA的統計觀察，韓國網路漫畫新作品於2013年至2016年的產量，
