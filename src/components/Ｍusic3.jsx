@@ -118,7 +118,7 @@ const Music3 = () => {
                         <p>臺灣音樂藝人團體如何擄獲日本歌迷的關注</p>
                     </div>
                     <div className="content_txt">
-                        文策院去（2021）年調查了2020年9月初至2021年9月底臺灣音樂藝人團體在日本網路的討論聲量，發現有96%的聲量來自社群媒體Twier，而落日飛車、盧廣仲、滅火器樂團、閃靈樂團和拍謝少年等為較受日本關注的臺灣中小型規模藝人。
+                        文策院去（2021）年調查了2020年9月初至2021年9月底臺灣音樂藝人團體在日本網路的討論聲量，發現有96%的聲量來自社群媒體Twitter，而落日飛車、盧廣仲、滅火器樂團、閃靈樂團和拍謝少年等為較受日本關注的臺灣中小型規模藝人。
                     </div>
                     <div className="content_txt">
                         臺灣中小規模音樂藝人及團體在日本社群討論聲量占比（％）
@@ -130,18 +130,18 @@ const Music3 = () => {
                                 showImage && <>
                                     <ResponsiveContainer width="100%" height="100%">
                                         <BarChart
-                                        width={500}
+                                        width={600}
                                         height={300}
                                         data={data}
                                         margin={{
                                             top: 5,
-                                            right: 30,
-                                            left: 20,
-                                            bottom: 5,
+                                            right: 35,
+                                            left: 35,
+                                            bottom: 10,
                                         }}
                                         barSize={20}
                                         >
-                                        <XAxis dataKey="name" scale="point" padding={{ left: 0, right: 0 }} />
+                                        <XAxis dataKey="name" scale="point" interval={0} angle={30} padding={{ left: 0, right: 0 }} />
                                         <Tooltip />
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />

@@ -137,16 +137,7 @@ const Comic = () => {
                             韓國網漫進化史 → Webtoon產業創造新商模
                         </div>
                         <div className="subContent">
-                            韓國Webtoon（網路漫畫）產業被視為繼韓劇
-                            （K-Drama）、韓國流行音樂（K-POP）之後，
-                            有潛力成為下一個推廣韓國文化到國際舞臺的韓
-                            流產業。Webtoon一字由網路媒介「web」與漫
-                            畫「cartoon」兩詞結合而成，專指載於網路平
-                            臺上的漫畫。當Webtoon逐漸取代傳統紙本漫畫
-                            成為創造韓國漫畫產業產?的主力，韓國漫畫產
-                            業的整體生態隨之改變，無論是產業發展走向、
-                            產業角色重組、政策規劃、行業標準皆接軌Webt
-                            oon產業的未來發展。
+                            韓國Webtoon（網路漫畫）產業被視為繼韓劇（K-Drama）、韓國流行音樂（K-POP）之後，有潛力成為下一個推廣韓國文化到國際舞臺的韓流產業。Webtoon一字由網路媒介「web」與漫畫「cartoon」兩詞結合而成，專指載於網路平臺上的漫畫。當Webtoon逐漸取代傳統紙本漫畫成為創造韓國漫畫產業產值的主力，韓國漫畫產業的整體生態隨之改變，無論是產業發展走向、產業角色重組、政策規劃、行業標準皆接軌Webtoon產業的未來發展。
                         </div>
                     </div>
                     <div className="block2">
@@ -173,7 +164,7 @@ const Comic = () => {
                                 <CartesianGrid stroke="#fff67f" />
                                 <XAxis dataKey="name" scale="band" stroke="#fff67f" />
                                 <YAxis stroke="#fff67f" />
-                                <Bar dataKey="pv" barSize={200} fill="#fff67f" animationDuration={5000}/>
+                                <Bar dataKey="pv" barSize={300} fill="#fff67f" animationDuration={5000}/>
                                 <Line type="monotone" dataKey="uv" stroke="#fff67f" />
                             </ComposedChart>
                         </ResponsiveContainer>

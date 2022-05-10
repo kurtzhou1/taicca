@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/section3.scss'
-import IMG from '../components/images/section2/img_music.png'
-
-
+import IMG from '../components/images/section2/img_music.png';
+import titleH2 from '../components/images/section2/s3_b3_t.png'
 
 const Music3_2 = () => {
 
@@ -10,6 +9,9 @@ const Music3_2 = () => {
         <div className="music3">
              <div className='blockWrap'>
                  <div className="content_block">
+                    <div className="block_title_h2">
+                        <img src={titleH2} alt="" />
+                    </div>
                     <div className="btm_block">
                         <div className="l_box">
                             <div className="block_title_h2">
