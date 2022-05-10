@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import './styles/section3.scss'
+import popData from './popData.json'
 import Popup from './Popup'
 
 import titleH1 from '../components/images/section2/s3_h1.png'
@@ -14,7 +15,10 @@ import footerLogo from '../components/images/section2/footer_logo.png'
 
 
 const MarketIntelligence = () => {
-    const [open,setOpen]=useState(false);
+    const [open,setOpen] = useState(false);
+    const [poptitle,setPoptitle] = useState('');
+    const [popClolr,setPopColor] = useState('');
+    const [popContent,setPopContent] = useState('');
 
     const settings = {
         dots: true,
@@ -55,54 +59,31 @@ const MarketIntelligence = () => {
                 {/* 輪播 */}
                 <div className="slider_block">
                     <Slider {...settings}>
-                        <div className='slider_box'>
-                            <div className="news_card">
-                                <h3 className="card_title">
-                                    Netflix為奧斯卡<br />
-                                    推出自家入圍影片線上專區
-                                </h3>
-                                <p>
-                                    Netflix為了自家發行的電影製作了Netflix Awards For Your Consideration ，供美國影藝學院會員參考，分為活動、看、讀、 聽等4個類別。「活動」中有電影近期的重要排程;「 看 」...
-                                </p>
-                                <div className="more_link" onClick={()=>{setOpen(!open)}}>MORE+</div>
-                            </div>
-                        </div>
-                        <div className='slider_box'>
-                            <div className="news_card sty_r">
-                                <h3 className="card_title">
-                                    Netflix為奧斯卡<br />
-                                    推出自家入圍影片線上專區
-                                </h3>
-                                <p>
-                                    Netflix為了自家發行的電影製作了Netflix Awards For Your Consideration ，供美國影藝學院會員參考，分為活動、看、讀、 聽等4個類別。「活動」中有電影近期的重要排程;「 看 」...
-                                </p>
-                                <div className="more_link" onClick={()=>{setOpen(!open)}}>MORE+</div>
-                            </div>
-                        </div>
-                        <div className='slider_box'>
-                            <div className="news_card sty_r">
-                                <h3 className="card_title">
-                                    Netflix為奧斯卡<br />
-                                    推出自家入圍影片線上專區
-                                </h3>
-                                <p>
-                                    Netflix為了自家發行的電影製作了Netflix Awards For Your Consideration ，供美國影藝學院會員參考，分為活動、看、讀、 聽等4個類別。「活動」中有電影近期的重要排程;「 看 」...
-                                </p>
-                                <div className="more_link" onClick={()=>{setOpen(!open)}}>MORE+</div>
-                            </div>
-                        </div>
-                        <div className='slider_box'>
-                            <div className="news_card">
-                                <h3 className="card_title">
-                                    Netflix為奧斯卡<br />
-                                    推出自家入圍影片線上專區
-                                </h3>
-                                <p>
-                                    Netflix為了自家發行的電影製作了Netflix Awards For Your Consideration ，供美國影藝學院會員參考，分為活動、看、讀、 聽等4個類別。「活動」中有電影近期的重要排程;「 看 」...
-                                </p>
-                                <div className="more_link" onClick={()=>{setOpen(!open)}}>MORE+</div>
-                            </div>
-                        </div>
+                        {
+                            popData.map((item,idx)=>{
+                                return (
+                                    <div className={`slider_box`} key={`slider${idx}`}>
+                                        <div className={`news_card ${item.color}`}>
+                                            <h3 className="card_title">
+                                               {item.title}
+                                            </h3>
+                                            <p>
+                                                {item.desc}
+                                            </p>
+                                            <div className="more_link" 
+                                                onClick={()=>{
+                                                    setOpen(!open);
+                                                    setPopColor(item.color);
+                                                    setPopContent(item.content);
+                                                    setPoptitle(item.title);
+                                                 }
+                                                }
+                                            >MORE+</div>
+                                        </div>
+                                    </div>
+                                );
+                            })
+                        }
                     </Slider>
                 </div>
 
@@ -113,7 +94,7 @@ const MarketIntelligence = () => {
                 <img src={footerBgr} alt="" className='footerBGr'/>
                 <img src={footerLogo} alt="" className='footerLogo'/>
                
-               <Popup open={open} closeFun={()=>{setOpen(false)}}/>
+               <Popup open={open} closeFun={()=>{setOpen(false)}} title={poptitle} content={popContent} color={popClolr}/>
         </div>
     );
 }

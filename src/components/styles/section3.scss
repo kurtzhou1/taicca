@@ -61,21 +61,43 @@
                 background: #fff;
                 box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
 
-                &.sty_r{
+                &.red{
                     .card_title{
                         &:after{
-                            background: #d8232b;
+                            background: #d32e26;
                         }
                     }
                     .more_link{
-                        color: #d8232b;
+                        color: #d32e26;
                     }
                 }
+                &.green{
+                    .card_title{
+                        &:after{
+                            background: #52a849;
+                        }
+                    }
+                    .more_link{
+                        color: #52a849;
+                    }
+                }
+                &.orange{
+                    .card_title{
+                        &:after{
+                            background: #d95f28;
+                        }
+                    }
+                    .more_link{
+                        color: #d95f28;
+                    }
+                }
+
                 .card_title{
                     width: 100%;
                     position: relative;
                     margin-bottom: 30px;
                     font-size: 20px;
+                    min-height: 60px;
                    &:after{
                        content: '';
                        position: absolute;
@@ -91,6 +113,7 @@
                     line-height: 25px;
                     color: #666;
                     margin-bottom: 30px;
+                    min-height: 175px;
                 }
                 .more_link{
                     display: block;

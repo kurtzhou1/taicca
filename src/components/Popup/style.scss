@@ -27,6 +27,43 @@
         padding: 40px 20px;
         border:4px solid #000;
         overflow: auto;
+        &.red{
+            .title_box{
+                &:after{
+                    background: #d32e26;
+                }
+            }
+            .button_box{
+                .close_btn{
+                    color: #d32e26;
+                }
+            }
+        }
+        &.green{
+            .title_box{
+                &:after{
+                    background: #52a849;
+                }
+            }
+            .button_box{
+                .close_btn{
+                    color: #52a849;
+                }
+            }
+        }
+        &.orange{
+            .title_box{
+                &:after{
+                    background: #d95f28;
+                }
+            }
+            .button_box{
+                .close_btn{
+                    color: #d95f28;
+                }
+            }
+        }
+        
         .title_box{
             position: relative;
             font-size: 26px;
