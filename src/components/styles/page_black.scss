@@ -271,15 +271,16 @@
                     color: #09361B;
                     position: absolute;
                     z-index: 1;
-                    left: 40.5%;
+                    left: 32.5%;
                     display: flex;
-                    width: 23%;
+                    width: 31%;
                     justify-content: space-between;
                     bottom: 8%;
                     @include forM(){
                         font-size: 12px;
-                        left: 35%;
+                        left: 37%;
                         width: 30.5%;
+                        bottom: 9%;
                     }
                 }
             }

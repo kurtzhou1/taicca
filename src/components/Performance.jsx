@@ -12,12 +12,12 @@ const Performance = () => {
                     <div className="l_box">
                         <div className="block_title_h2">
                             <img src={title} alt="" />
-                            <p>在臺北商圈營運表演空間，區位在哪？</p>
+                            <p>在臺北哪裡經營表演空間有商機？商圈分析是這麼說的</p>
                         </div>
                         <div className="content_txt">
-                            如果想要在交通方便、捷運可達、下班可以跟朋友約，順便逛街就
-                            會想到的蛋黃區商圈設立表演場所，就臺北市內的房地產物件客觀
-                            條件，想要經營這一行的業主有什麼選擇？
+                        如果想要在交通方便、捷運可達、下班可以跟朋友約，順便逛街就會到
+                        的蛋黃區商圈設立表演場所，就臺北市內的房地產物件客觀條件，想要
+                        經營表演空間的業主有什麼選擇？
                         </div>
                         <div className="btn_box">
                             <a className="more_btn" href='./02_tw04.html'>

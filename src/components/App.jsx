@@ -12,6 +12,7 @@ import Performance from './Performance';
 import FilmSection3 from './FilmSection3';
 import CrossSection3 from './CrossSection3';
 import Music3 from './Ｍusic3'
+import Music3_2 from './Ｍusic3_2'
 import VisualArt3 from './VisualArt3'
 import MarketIntelligence from './MarketIntelligence'
 
@@ -42,6 +43,8 @@ const Containers = () => {
                 <div className='section_2_box'><Music3 /></div>
                 {/* 國際動態(視覺藝術) */}
                 <div className='section_2_box'><VisualArt3 /></div>
+                 {/* 國際動態(音樂_2) */}
+                 <div className='section_2_box'><Music3_2 /></div>
             </div>
 
             <div className="section_3_block">
