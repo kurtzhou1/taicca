@@ -87,8 +87,6 @@ const Music3 = () => {
           return actualTop
       }
 
-  
-  
       useEffect(() => {
           //計算每個區塊
           document.addEventListener('scroll', onScroll)
@@ -152,7 +150,7 @@ const Music3 = () => {
                                         }}
                                         barSize={20}
                                         >
-                                        <XAxis dataKey="name" scale="point" interval={0} angle={30} padding={{ left: 0, right: 0 }} />
+                                        <XAxis dataKey="name" scale="point" tick={{fontSize: isPc ? 16 : 12}} interval={0} angle={30} padding={{ left: 0, right: 0 }} />
                                         <Tooltip content={<CustomTooltip />} />
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
