@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/section2.scss'
 import titleH1 from '../components/images/section2/section2_h1.png'
 import titleH2 from '../components/images/section2/section2_b1_t.png'
-import dataIMG from '../components/images/section2/layer_567.png'
+import dataIMG from '../components/images/section2/layer_567.jpg'
 
 const Cross = () => {
     

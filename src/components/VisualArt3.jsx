@@ -96,7 +96,7 @@ const VisualArt3 = () => {
                 <div className="content_block">
                     <div className="block_title_h2">
                         <img src={titleH2} alt="" />
-                        <p>藝術拍賣產業加入綠色產業行列</p>
+                        <p>藝術拍賣加入綠色產業行列</p>
                     </div>
                     <div className="content_txt">
                         國際藝術拍賣龍頭佳士得（Christie's）於2021年7月首次公布集團的年度碳排放量，並宣示遵循「科學基礎減量目標倡議」（SBTi），承諾將減少碳排50%，於2030年以前達到淨零排放（Net Zero）。在2021年全球拍賣市場取得43%市占的佳士得，是全球2,356間響應SBTi公司中唯一的藝術拍賣行。

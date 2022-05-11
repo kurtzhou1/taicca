@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
 import './style.scss'
 
 const Popup = ({open,closeFun,color,title,content}) => {
@@ -10,9 +10,16 @@ const Popup = ({open,closeFun,color,title,content}) => {
                     {title}
                 </h3>
                 <div className="content_box">
-                    <p>
+                {content && content.map((i) => {
+                    return(
+                        <p>
+                            {i}
+                        </p>
+                    )
+                })}
+                    {/* <p>
                        {content}
-                    </p>
+                    </p> */}
                 </div>
                 <div className="button_box">
                     <div className="close_btn" onClick={()=>{closeFun()}}>
