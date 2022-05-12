@@ -80,6 +80,7 @@
 // 產業研究(跨域)
 .cross{
     padding-bottom: 20px;
+    background: #f3f3f3;
     .subContent_block{
         width: 100%;
         display: flex;
@@ -127,7 +128,6 @@
 
 // 產業研究(出版)
 .publish{
-   background: #f3f3f3; 
    padding: 60px 0;
    .content_txt{
        margin-bottom: 20px;
@@ -174,7 +174,8 @@
 // 產業研究(表演藝術)
 .performance{
     padding: 40px 0;
-    background: #f3f3f3;
+    background: #f3f3f3; 
+    // background: #f3f3f3;
     .content_block{
         display: flex;
         justify-content: space-between;
