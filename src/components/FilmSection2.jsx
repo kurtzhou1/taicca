@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/section2.scss'
-import title from '../components/images/section2/s2_b3_t.png'
+import titleH1 from '../components/images/section2/section3_h1.png'
+import title from '../components/images/section2/s3_b1_t.png'
 import dataIMG from '../components/images/section2/s2_b3_data.png'
 
 const FilmSection2 = () => {
@@ -8,6 +9,9 @@ const FilmSection2 = () => {
     return (
         <div className="filmSection2">
             <div className="blockWrap">
+                <div className="block_title_h1">
+                    <img src={titleH1} alt="" />
+                </div>
                 <div className='content_block'>
                     <div className="block1">
                         <div className="block_title_h2">

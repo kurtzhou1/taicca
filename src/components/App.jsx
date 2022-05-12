@@ -31,10 +31,10 @@ const Containers = () => {
                 <div className='section_2_box'><Cross /></div>
                 {/* 產業研究(出版) */}
                 <div className='section_2_box'><Publish /></div>
-                {/* 產業研究(影視) */}
-                <div className='section_2_box'><FilmSection2 /></div>
                 {/* 產業研究(表演藝術) */}
                 <div className='section_2_box'><Performance /></div>
+                {/* 產業研究(影視) */}
+                <div className='section_2_box'><FilmSection2 /></div>
                 {/* 國際動態(影視) */}
                 <div className='section_2_box'><FilmSection3 /></div>
                 {/* 國際動態(跨域) */}
