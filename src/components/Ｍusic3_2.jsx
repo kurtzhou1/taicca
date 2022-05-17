@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/section3.scss'
 import IMG from '../components/images/section2/img_music.png';
-import titleH2 from '../components/images/section2/s3_b3_t.png'
+import titleH2 from '../components/images/section2/s3_b3_t_p.png'
 
 const Music3_2 = () => {
 

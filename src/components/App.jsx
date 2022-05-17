@@ -33,6 +33,8 @@ const Containers = () => {
                 <div className='section_2_box'><Publish /></div>
                 {/* 產業研究(表演藝術) */}
                 <div className='section_2_box'><Performance /></div>
+                {/* 國際動態(音樂_2) */}
+                <div className='section_2_box'><Music3_2 /></div>
                 {/* 產業研究(影視) */}
                 <div className='section_2_box'><FilmSection2 /></div>
                 {/* 國際動態(影視) */}
@@ -43,8 +45,6 @@ const Containers = () => {
                 <div className='section_2_box'><Music3 /></div>
                 {/* 國際動態(視覺藝術) */}
                 <div className='section_2_box'><VisualArt3 /></div>
-                 {/* 國際動態(音樂_2) */}
-                 <div className='section_2_box'><Music3_2 /></div>
             </div>
 
             <div className="section_3_block">

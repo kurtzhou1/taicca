@@ -149,7 +149,7 @@ const Comic = () => {
                 </div>
                 <div className='comic_chart' id="target">
                     <div>
-                        <div>2011-2020韓國網路漫畫新品及累計產量表────</div>
+                        <div className='white'>2011-2020韓國網路漫畫新品及累計產量表────</div>
                         <div>(單位:千部)</div>
                     </div>
                     <div className={`chart ${showImage ? 'showImage' : ''}`}>
@@ -169,8 +169,8 @@ const Comic = () => {
                             </ComposedChart>
                         </ResponsiveContainer>
                         <div className='numberWrap'>
+                            <div className='no1'>1971</div>
                             <div>382</div>
-                            <div>1971</div>
                         </div>
                     </div>
                     <div className='text' >

@@ -103,7 +103,7 @@ const VisualArt3 = () => {
                     </div>
                     <div className="data_block">
                         <div className="l_box">
-                            <p className='content_txt'>佳士得2019年碳排放量分布─</p>
+                            <p className='content_txt bold'>佳士得2019年碳排放量分布─</p>
                             <div className="pieChart" id="target_pie">
                                 {/* 圓餅圖 */}
                                 {

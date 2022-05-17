@@ -112,7 +112,7 @@ const Music3 = () => {
             console.log(active, payload, label)
             return (
             <div className="custom-tooltip">
-                <p className="label">{`${label} : ${payload[0].value}`}</p>
+                <p className="label">{`${label} : ${payload[0].value}%`}</p>
             </div>
             );
         }
@@ -129,7 +129,7 @@ const Music3 = () => {
                     <div className="content_txt">
                         根據博報堂發行的《內容粉絲消費行動調查2020》報告，2019年日本音樂市場規模約為7,231億日圓（約新臺幣1,778.8億元，同年度臺灣音樂市場規模約為其14%），日本樂迷以參加現場演唱會和音樂祭等實體活動的消費占比最多（36.6%），其次為購買實體CD/DVD（23.5%）。 雖然日本音樂市場不易進入，觀察近二年日本各大音樂榜的專輯、藝人、歌曲類別Top10也僅出現二、三組外國藝人團體（且多為韓國團體），但日本音樂市場大，臺灣藝人團體未嘗不能在當地占有一席之地。
                     </div>
-                    <div className="content_txt">
+                    <div className="content_txt bold">
                         臺灣中小規模音樂藝人及團體在日本社群討論聲量占比（％）
                     </div>
                     <div className="data_box">
@@ -150,7 +150,7 @@ const Music3 = () => {
                                         }}
                                         barSize={20}
                                         >
-                                        <XAxis dataKey="name" scale="point" tick={{fontSize: isPc ? 16 : 12}} interval={0} angle={30} padding={{ left: 0, right: 0 }} />
+                                        <XAxis dataKey="name" scale="point" tick={{fontSize: isPc ? 16 : 12}} interval={0} angle={90} padding={{ left: 0, right: 0 }} />
                                         <Tooltip content={<CustomTooltip />} />
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
@@ -175,24 +175,6 @@ const Music3 = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="btm_block">
-                        <div className="l_box">
-                            <div className="block_title_h2">
-                                <p>永續發展，以國際趨勢為例，臺灣音樂也做得到</p>
-                            </div>
-                            <div className="content_txt">
-                                在去年底的COP26簽訂格拉斯哥氣候協定後，2050年淨零排放（Net Zero）已是全球氣候行動的共識。而音樂產業也不例外，全球三大音樂唱片公司，環球、華納、Sony以及部分廠牌也回應簽署音樂氣候協定，目標2030年減碳50%、2050年淨零排放。
-                            </div>
-                            <div className="btn_box">
-                                <a className="more_btn" href='./02_tw05.html'>
-                                    MORE+
-                                </a>
-                            </div>
-                        </div>
-                        <div className="r_box">
-                            <img src={IMG} alt="" />
-                        </div>
-                    </div> */}
                  </div>
              </div>
         </div>

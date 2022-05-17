@@ -1,6 +1,9 @@
 
 // 共同樣式
 .section_2_block{
+    .gary{
+        background: #f3f3f3;
+    }
     *{
         box-sizing: border-box;
         margin: 0;
@@ -30,7 +33,7 @@
         p{
             width: 100%;
             font-size: 28px;
-            font-weight: 400;
+            font-weight: bold;
             color: #000;
             line-height: 1.5;
         }
@@ -45,9 +48,9 @@
     }
 
     .block_title_h3{
-        color: #5c148b;
         font-size: 16px;
         margin-bottom: 10px;
+        font-weight: bold;
     }
 
     .content_block{
@@ -61,6 +64,9 @@
         line-height: 1.6;
         color: #000;
         margin-bottom: 10px;
+        &.bold{
+            font-weight: bold;
+        }
     }
 
     .more_btn{
@@ -80,7 +86,6 @@
 // 產業研究(跨域)
 .cross{
     padding-bottom: 20px;
-    background: #f3f3f3;
     .subContent_block{
         width: 100%;
         display: flex;
@@ -102,9 +107,6 @@
                 font-size: 16px;
                 color: #000;
                 line-height: 1.5;
-                span{
-                    color: #5c148b;
-                }
             }
         }
         .btn_box{
@@ -137,6 +139,7 @@
        .title{
         font-size: 16px;
         margin-bottom: 10px;
+        font-weight: bold;
        }
        img{
            max-width: 100%;
@@ -174,8 +177,6 @@
 // 產業研究(表演藝術)
 .performance{
     padding: 40px 0;
-    background: #f3f3f3; 
-    // background: #f3f3f3;
     .content_block{
         display: flex;
         justify-content: space-between;

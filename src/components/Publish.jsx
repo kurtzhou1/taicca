@@ -6,7 +6,7 @@ import dataIMG from '../components/images/section2/s2_b2_data.png'
 const Publish = () => {
     
     return (
-        <div className="publish">
+        <div className="publish gary">
             <div className='blockWrap'>
                 <div className="content_block">
                     <div className="block_title_h2">

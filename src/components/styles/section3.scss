@@ -1,5 +1,14 @@
 
+@mixin forM {
+    @media screen and (max-width: 980px) {
+        @content;
+    }
+}
+
 .section_3_block{
+    .gary{
+        background: #f3f3f3;
+    }
     *{
         margin: 0;
         box-sizing: border-box;
@@ -155,5 +164,8 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
+        @include forM(){
+            bottom: 25%;
+        }
     }
 }
