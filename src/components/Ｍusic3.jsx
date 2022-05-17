@@ -143,14 +143,14 @@ const Music3 = () => {
                                         height={300}
                                         data={data}
                                         margin={{
-                                            top: 5,
+                                            top: 0,
                                             right: 35,
                                             left: 35,
-                                            bottom: 10,
+                                            bottom: 60,
                                         }}
                                         barSize={20}
                                         >
-                                        <XAxis dataKey="name" scale="point" tick={{fontSize: isPc ? 16 : 12}} interval={0} angle={90} padding={{ left: 0, right: 0 }} />
+                                        <XAxis dataKey="name" scale="point" tick={{fontSize: isPc ? 16 : 12}} interval={0} angle={90} padding={{ left: 0, right: 0 }} dy={40} />
                                         <Tooltip content={<CustomTooltip />} />
                                         <CartesianGrid strokeDasharray="3 3" />
                                         <Bar dataKey="pv" fill="#8dc55d" background={{ fill: '#eee' }} />
