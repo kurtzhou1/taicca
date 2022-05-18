@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/page_black.scss'
 
 const Focus = () => {
-    
+
     return (
         <div className="focus">
             <div className='title' />
@@ -12,7 +12,7 @@ const Focus = () => {
                     在出版當天一早至書店報到，是過去許多漫畫迷追連載漫畫的生活日常；現在，只要點進電子書城，彈指間就可以看到最新一集的故事內容。
                 </div>
                 <div>
-                    過去，你可能為了要看哪一臺的電視節目與家人展開遙控器爭霸；而現在朋友間的話題，更多是圍繞某部影集要上Netflix、Desney+還是CATCHPLAY+才看得到？
+                    過去，你可能為了要看哪一臺的電視節目與家人展開遙控器爭霸；而現在朋友間的話題，更多是圍繞某部影集要上Netflix、Disney+還是CATCHPLAY+才看得到？
                 </div>
                 <div>
                     受疫情影響掀起的線上化或Metaverse熱潮，對於早已透過電競遊戲成功將FIFA品牌虛實整合的國際足球總會，線上賽事並非疫情期間實體比賽的替代品，而是擁有一批忠實粉絲的強勢商模。
